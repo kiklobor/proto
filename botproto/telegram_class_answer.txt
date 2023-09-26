@@ -1,0 +1,672 @@
+
+
+2020-09-10 11:48:26
+Content to send: {"method":"answerCallbackQuery","text":"\u0417\u0430\u043a\u0430\u0437 \u2116174 \u0443\u0436\u0435 \u043f\u0440\u0438\u043d\u044f\u0442","callback_query_id":"1300134615220707564","show_alert":"true"}
+
+
+2020-09-10 11:48:26
+Answer content: {"ok":false,"error_code":400,"description":"Bad Request: query is too old and response timeout expired or query ID is invalid"}
+
+
+2020-09-10 11:48:26
+Content to send: {"method":"editMessageReplyMarkup","chat_id":302711179,"message_id":185,"reply_markup":{"inline_keyboard":[]}}
+
+
+2020-09-10 11:48:27
+Answer content: {"ok":false,"error_code":400,"description":"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message"}
+
+
+2020-09-10 11:51:27
+Content to send: {"method":"sendMessage","text":"\u041d\u043e\u0432\u044b\u0439 \u0442\u0435\u0441\u0442\u043e\u0432\u044b\u0439 \u0437\u0430\u043a\u0430\u0437 \u21164","chat_id":302711179,"disable_notification":"true","reply_markup":{"inline_keyboard":[[{"text":"\u041f\u0440\u0438\u043d\u044f\u0442\u044c","callback_data":"action=accept&what=order&id=4"}]]}}
+
+
+2020-09-10 11:51:27
+Answer content: {"ok":true,"result":{"message_id":987,"from":{"id":745535068,"is_bot":true,"first_name":"\u0418\u043c\u0438\u0434\u0436","username":"imigebot"},"chat":{"id":302711179,"first_name":"Sergejs","last_name":"Germanovs","username":"germanovs","type":"private"},"date":1599727887,"text":"\u041d\u043e\u0432\u044b\u0439 \u0442\u0435\u0441\u0442\u043e\u0432\u044b\u0439 \u0437\u0430\u043a\u0430\u0437 \u21164","reply_markup":{"inline_keyboard":[[{"text":"\u041f\u0440\u0438\u043d\u044f\u0442\u044c","callback_data":"action=accept&what=order&id=4"}]]}}}
+
+
+2020-09-10 12:07:27
+Content to send: {"method":"sendMessage","text":"\u041a\u043e\u043c\u0430\u043d\u0434\u044b \u043f\u043e\u043a\u0430 \u043d\u0435 \u043f\u043e\u0434\u0434\u0435\u0440\u0436\u0438\u0432\u0430\u044e\u0442\u0441\u044f","chat_id":302711179,"disable_notification":"false"}
+
+
+2020-09-10 12:07:28
+Answer content: {"ok":true,"result":{"message_id":188,"from":{"id":799513981,"is_bot":true,"first_name":"imigetest","username":"imigetestbot"},"chat":{"id":302711179,"first_name":"Sergejs","last_name":"Germanovs","username":"germanovs","type":"private"},"date":1599728847,"text":"\u041a\u043e\u043c\u0430\u043d\u0434\u044b \u043f\u043e\u043a\u0430 \u043d\u0435 \u043f\u043e\u0434\u0434\u0435\u0440\u0436\u0438\u0432\u0430\u044e\u0442\u0441\u044f"}}
+
+
+2020-09-10 12:08:03
+Content to send: {"method":"sendMessage","text":"\u041d\u043e\u0432\u044b\u0439 \u0442\u0435\u0441\u0442\u043e\u0432\u044b\u0439 \u0437\u0430\u043a\u0430\u0437 \u21165","chat_id":302711179,"disable_notification":"true","reply_markup":{"inline_keyboard":[[{"text":"\u041f\u0440\u0438\u043d\u044f\u0442\u044c","callback_data":"action=accept&what=order&id=5"}]]}}
+
+
+2020-09-10 12:08:04
+Answer content: {"ok":true,"result":{"message_id":190,"from":{"id":799513981,"is_bot":true,"first_name":"imigetest","username":"imigetestbot"},"chat":{"id":302711179,"first_name":"Sergejs","last_name":"Germanovs","username":"germanovs","type":"private"},"date":1599728883,"text":"\u041d\u043e\u0432\u044b\u0439 \u0442\u0435\u0441\u0442\u043e\u0432\u044b\u0439 \u0437\u0430\u043a\u0430\u0437 \u21165","reply_markup":{"inline_keyboard":[[{"text":"\u041f\u0440\u0438\u043d\u044f\u0442\u044c","callback_data":"action=accept&what=order&id=5"}]]}}}
+
+
+2020-09-10 12:08:05
+Content to send: {"method":"answerCallbackQuery","text":"\u0417\u0430\u043a\u0430\u0437 \u21165 \u0443\u0436\u0435 \u043f\u0440\u0438\u043d\u044f\u0442","callback_query_id":"1300134614916630606","show_alert":"true"}
+
+
+2020-09-10 12:08:05
+Answer content: {"ok":true,"result":true}
+
+
+2020-09-10 12:08:05
+Content to send: {"method":"editMessageReplyMarkup","chat_id":302711179,"message_id":190,"reply_markup":{"inline_keyboard":[]}}
+
+
+2020-09-10 12:08:05
+Answer content: {"ok":true,"result":{"message_id":190,"from":{"id":799513981,"is_bot":true,"first_name":"imigetest","username":"imigetestbot"},"chat":{"id":302711179,"first_name":"Sergejs","last_name":"Germanovs","username":"germanovs","type":"private"},"date":1599728883,"edit_date":1599728885,"text":"\u041d\u043e\u0432\u044b\u0439 \u0442\u0435\u0441\u0442\u043e\u0432\u044b\u0439 \u0437\u0430\u043a\u0430\u0437 \u21165"}}
+
+
+2020-09-10 12:19:08
+Content to send: {"method":"answerCallbackQuery","text":"\u0417\u0430\u043a\u0430\u0437 \u2116175 \u0443\u0436\u0435 \u043f\u0440\u0438\u043d\u044f\u0442","callback_query_id":"1300134617486594185","show_alert":"true"}
+
+
+2020-09-10 12:19:09
+Answer content: {"ok":true,"result":true}
+
+
+2020-09-10 12:19:09
+Content to send: {"method":"editMessageReplyMarkup","chat_id":302711179,"message_id":192,"reply_markup":{"inline_keyboard":[]}}
+
+
+2020-09-10 12:19:09
+Answer content: {"ok":true,"result":{"message_id":192,"from":{"id":799513981,"is_bot":true,"first_name":"imigetest","username":"imigetestbot"},"chat":{"id":302711179,"first_name":"Sergejs","last_name":"Germanovs","username":"germanovs","type":"private"},"date":1599729537,"edit_date":1599729549,"text":"\u041d\u043e\u0432\u044b\u0439 \u0437\u0430\u043a\u0430\u0437 \u2116175\n\u0417\u0430\u043a\u0430\u0437\u0447\u0438\u043a: test\n\u0422\u0435\u043b\u0435\u0444\u043e\u043d: 123\n\u041f\u043e\u0447\u0442\u0430: 1@a.a\n\u0412\u0441\u0435\u0433\u043e \u0442\u043e\u0432\u0430\u0440\u043e\u0432: 1\n\u0421\u0443\u043c\u043c\u0430: 75.8\n\u041c\u0435\u043d\u0435\u0434\u0436\u0435\u0440: Manager Sergey\n\u041f\u043e\u043b\u043d\u0430\u044f \u0438\u043d\u0444\u043e\u0440\u043c\u0430\u0446\u0438\u044f \u043e \u0437\u0430\u043a\u0430\u0437\u0435 \u0432\u044b\u0441\u043b\u0430\u043d\u0430 \u043f\u043e \u043f\u043e\u0447\u0442\u0435."}}
+
+
+2020-09-10 12:32:47
+Content to send: {"method":"answerCallbackQuery","text":"\u0412\u044b \u043f\u0440\u0438\u043d\u044f\u043b\u0438 \u0437\u0430\u043a\u0430\u0437 \u2116172","callback_query_id":"1300134617685318628","show_alert":"true"}
+
+
+2020-09-10 12:32:47
+Answer content: {"ok":true,"result":true}
+
+
+2020-09-10 12:32:47
+Content to send: {"method":"editMessageReplyMarkup","chat_id":302711179,"message_id":194,"reply_markup":{"inline_keyboard":[]}}
+
+
+2020-09-10 12:32:47
+Answer content: {"ok":true,"result":{"message_id":194,"from":{"id":799513981,"is_bot":true,"first_name":"imigetest","username":"imigetestbot"},"chat":{"id":302711179,"first_name":"Sergejs","last_name":"Germanovs","username":"germanovs","type":"private"},"date":1599730352,"edit_date":1599730367,"text":"\u041d\u043e\u0432\u044b\u0439 \u0437\u0430\u043a\u0430\u0437 \u2116172\n\u0417\u0430\u043a\u0430\u0437\u0447\u0438\u043a: test\n\u0422\u0435\u043b\u0435\u0444\u043e\u043d: 123\n\u041f\u043e\u0447\u0442\u0430: 1@a.a\n\u0412\u0441\u0435\u0433\u043e \u0442\u043e\u0432\u0430\u0440\u043e\u0432: 1\n\u0421\u0443\u043c\u043c\u0430: 75.8\n\u041c\u0435\u043d\u0435\u0434\u0436\u0435\u0440: Manager Sergey\n\u041f\u043e\u043b\u043d\u0430\u044f \u0438\u043d\u0444\u043e\u0440\u043c\u0430\u0446\u0438\u044f \u043e \u0437\u0430\u043a\u0430\u0437\u0435 \u0432\u044b\u0441\u043b\u0430\u043d\u0430 \u043f\u043e \u043f\u043e\u0447\u0442\u0435."}}
+
+
+2020-09-10 12:32:47
+Content to send: {"method":"sendMessage","text":"Manager Sergey \u043f\u0440\u0438\u043d\u044f\u043b(\u0430) \u0437\u0430\u043a\u0430\u0437 \u2116172","chat_id":"302711179","disable_notification":"true"}
+
+
+2020-09-10 12:32:47
+Answer content: {"ok":true,"result":{"message_id":195,"from":{"id":799513981,"is_bot":true,"first_name":"imigetest","username":"imigetestbot"},"chat":{"id":302711179,"first_name":"Sergejs","last_name":"Germanovs","username":"germanovs","type":"private"},"date":1599730367,"text":"Manager Sergey \u043f\u0440\u0438\u043d\u044f\u043b(\u0430) \u0437\u0430\u043a\u0430\u0437 \u2116172"}}
+
+
+2020-09-10 12:32:47
+Content to send: {"method":"sendMessage","text":"Manager Sergey \u043f\u0440\u0438\u043d\u044f\u043b(\u0430) \u0437\u0430\u043a\u0430\u0437 \u2116172","chat_id":"690248351","disable_notification":"true"}
+
+
+2020-09-10 12:32:48
+Answer content: {"ok":true,"result":{"message_id":196,"from":{"id":799513981,"is_bot":true,"first_name":"imigetest","username":"imigetestbot"},"chat":{"id":690248351,"first_name":"Alina","last_name":"Germanova","username":"Alina_doberman","type":"private"},"date":1599730368,"text":"Manager Sergey \u043f\u0440\u0438\u043d\u044f\u043b(\u0430) \u0437\u0430\u043a\u0430\u0437 \u2116172"}}
+
+
+2020-09-10 12:34:43
+Content to send: {"method":"answerCallbackQuery","text":"\u0412\u044b \u043f\u0440\u0438\u043d\u044f\u043b\u0438 \u0437\u0430\u043a\u0430\u0437 \u2116173","callback_query_id":"2964594097940888759","show_alert":"true"}
+
+
+2020-09-10 12:34:43
+Answer content: {"ok":true,"result":true}
+
+
+2020-09-10 12:34:43
+Content to send: {"method":"editMessageReplyMarkup","chat_id":690248351,"message_id":199,"reply_markup":{"inline_keyboard":[]}}
+
+
+2020-09-10 12:34:43
+Answer content: {"ok":true,"result":{"message_id":199,"from":{"id":799513981,"is_bot":true,"first_name":"imigetest","username":"imigetestbot"},"chat":{"id":690248351,"first_name":"Alina","last_name":"Germanova","username":"Alina_doberman","type":"private"},"date":1599730455,"edit_date":1599730483,"text":"\u041d\u043e\u0432\u044b\u0439 \u0437\u0430\u043a\u0430\u0437 \u2116173\n\u0417\u0430\u043a\u0430\u0437\u0447\u0438\u043a: test\n\u0422\u0435\u043b\u0435\u0444\u043e\u043d: 123\n\u041f\u043e\u0447\u0442\u0430: 1@a.a\n\u0412\u0441\u0435\u0433\u043e \u0442\u043e\u0432\u0430\u0440\u043e\u0432: 1\n\u0421\u0443\u043c\u043c\u0430: 75.8\n\u041c\u0435\u043d\u0435\u0434\u0436\u0435\u0440: \u043b\u044e\u0431\u043e\u0439\n\u041f\u043e\u043b\u043d\u0430\u044f \u0438\u043d\u0444\u043e\u0440\u043c\u0430\u0446\u0438\u044f \u043e \u0437\u0430\u043a\u0430\u0437\u0435 \u0432\u044b\u0441\u043b\u0430\u043d\u0430 \u043f\u043e \u043f\u043e\u0447\u0442\u0435."}}
+
+
+2020-09-10 12:34:43
+Content to send: {"method":"sendMessage","text":"Manager Alina \u043f\u0440\u0438\u043d\u044f\u043b(\u0430) \u0437\u0430\u043a\u0430\u0437 \u2116173","chat_id":"302711179","disable_notification":"true"}
+
+
+2020-09-10 12:34:44
+Answer content: {"ok":true,"result":{"message_id":200,"from":{"id":799513981,"is_bot":true,"first_name":"imigetest","username":"imigetestbot"},"chat":{"id":302711179,"first_name":"Sergejs","last_name":"Germanovs","username":"germanovs","type":"private"},"date":1599730483,"text":"Manager Alina \u043f\u0440\u0438\u043d\u044f\u043b(\u0430) \u0437\u0430\u043a\u0430\u0437 \u2116173"}}
+
+
+2020-09-10 12:34:44
+Content to send: {"method":"sendMessage","text":"Manager Alina \u043f\u0440\u0438\u043d\u044f\u043b(\u0430) \u0437\u0430\u043a\u0430\u0437 \u2116173","chat_id":"690248351","disable_notification":"true"}
+
+
+2020-09-10 12:34:44
+Answer content: {"ok":true,"result":{"message_id":201,"from":{"id":799513981,"is_bot":true,"first_name":"imigetest","username":"imigetestbot"},"chat":{"id":690248351,"first_name":"Alina","last_name":"Germanova","username":"Alina_doberman","type":"private"},"date":1599730484,"text":"Manager Alina \u043f\u0440\u0438\u043d\u044f\u043b(\u0430) \u0437\u0430\u043a\u0430\u0437 \u2116173"}}
+
+
+2020-09-10 12:34:52
+Content to send: {"method":"answerCallbackQuery","text":"\u0417\u0430\u043a\u0430\u0437 \u2116173 \u0443\u0436\u0435 \u043f\u0440\u0438\u043d\u044f\u0442","callback_query_id":"1300134617203825782","show_alert":"true"}
+
+
+2020-09-10 12:34:53
+Answer content: {"ok":true,"result":true}
+
+
+2020-09-10 12:34:53
+Content to send: {"method":"editMessageReplyMarkup","chat_id":302711179,"message_id":198,"reply_markup":{"inline_keyboard":[]}}
+
+
+2020-09-10 12:34:53
+Answer content: {"ok":true,"result":{"message_id":198,"from":{"id":799513981,"is_bot":true,"first_name":"imigetest","username":"imigetestbot"},"chat":{"id":302711179,"first_name":"Sergejs","last_name":"Germanovs","username":"germanovs","type":"private"},"date":1599730455,"edit_date":1599730493,"text":"\u041d\u043e\u0432\u044b\u0439 \u0437\u0430\u043a\u0430\u0437 \u2116173\n\u0417\u0430\u043a\u0430\u0437\u0447\u0438\u043a: test\n\u0422\u0435\u043b\u0435\u0444\u043e\u043d: 123\n\u041f\u043e\u0447\u0442\u0430: 1@a.a\n\u0412\u0441\u0435\u0433\u043e \u0442\u043e\u0432\u0430\u0440\u043e\u0432: 1\n\u0421\u0443\u043c\u043c\u0430: 75.8\n\u041c\u0435\u043d\u0435\u0434\u0436\u0435\u0440: \u043b\u044e\u0431\u043e\u0439\n\u041f\u043e\u043b\u043d\u0430\u044f \u0438\u043d\u0444\u043e\u0440\u043c\u0430\u0446\u0438\u044f \u043e \u0437\u0430\u043a\u0430\u0437\u0435 \u0432\u044b\u0441\u043b\u0430\u043d\u0430 \u043f\u043e \u043f\u043e\u0447\u0442\u0435."}}
+
+
+2020-09-10 12:37:13
+Content to send: {"method":"answerCallbackQuery","text":"\u0417\u0430\u043a\u0430\u0437 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d","callback_query_id":"1300134614842003061","show_alert":"true"}
+
+
+2020-09-10 12:37:13
+Answer content: {"ok":true,"result":true}
+
+
+2020-09-10 12:37:16
+Content to send: {"method":"answerCallbackQuery","text":"\u0417\u0430\u043a\u0430\u0437 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d","callback_query_id":"1300134614709717355","show_alert":"true"}
+
+
+2020-09-10 12:37:16
+Answer content: {"ok":true,"result":true}
+
+
+2020-09-10 12:38:19
+Content to send: {"method":"answerCallbackQuery","text":"\u0417\u0430\u043a\u0430\u0437 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d","callback_query_id":"1300134614251511789","show_alert":"true"}
+
+
+2020-09-10 12:38:19
+Answer content: {"ok":true,"result":true}
+
+
+2020-09-10 12:38:19
+Content to send: {"method":"editMessageReplyMarkup","chat_id":302711179,"message_id":180,"reply_markup":{"inline_keyboard":[]}}
+
+
+2020-09-10 12:38:19
+Answer content: {"ok":true,"result":{"message_id":180,"from":{"id":799513981,"is_bot":true,"first_name":"imigetest","username":"imigetestbot"},"chat":{"id":302711179,"first_name":"Sergejs","last_name":"Germanovs","username":"germanovs","type":"private"},"date":1599727276,"edit_date":1599730699,"text":"\u041d\u043e\u0432\u044b\u0439 \u0437\u0430\u043a\u0430\u0437 \u2116172\n\u0417\u0430\u043a\u0430\u0437\u0447\u0438\u043a: test\n\u0422\u0435\u043b\u0435\u0444\u043e\u043d: 123\n\u041f\u043e\u0447\u0442\u0430: 1@a.a\n\u0412\u0441\u0435\u0433\u043e \u0442\u043e\u0432\u0430\u0440\u043e\u0432: 1\n\u0421\u0443\u043c\u043c\u0430: 75.8\n\u041c\u0435\u043d\u0435\u0434\u0436\u0435\u0440: Manager Sergey\n\u041f\u043e\u043b\u043d\u0430\u044f \u0438\u043d\u0444\u043e\u0440\u043c\u0430\u0446\u0438\u044f \u043e \u0437\u0430\u043a\u0430\u0437\u0435 \u0432\u044b\u0441\u043b\u0430\u043d\u0430 \u043f\u043e \u043f\u043e\u0447\u0442\u0435."}}
+
+
+2020-09-10 12:38:21
+Content to send: {"method":"answerCallbackQuery","text":"\u0417\u0430\u043a\u0430\u0437 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d","callback_query_id":"1300134614208234696","show_alert":"true"}
+
+
+2020-09-10 12:38:21
+Answer content: {"ok":true,"result":true}
+
+
+2020-09-10 12:38:21
+Content to send: {"method":"editMessageReplyMarkup","chat_id":302711179,"message_id":181,"reply_markup":{"inline_keyboard":[]}}
+
+
+2020-09-10 12:38:22
+Answer content: {"ok":true,"result":{"message_id":181,"from":{"id":799513981,"is_bot":true,"first_name":"imigetest","username":"imigetestbot"},"chat":{"id":302711179,"first_name":"Sergejs","last_name":"Germanovs","username":"germanovs","type":"private"},"date":1599727276,"edit_date":1599730702,"text":"\u041d\u043e\u0432\u044b\u0439 \u0437\u0430\u043a\u0430\u0437 \u2116172\n\u0417\u0430\u043a\u0430\u0437\u0447\u0438\u043a: test\n\u0422\u0435\u043b\u0435\u0444\u043e\u043d: 123\n\u041f\u043e\u0447\u0442\u0430: 1@a.a\n\u0412\u0441\u0435\u0433\u043e \u0442\u043e\u0432\u0430\u0440\u043e\u0432: 1\n\u0421\u0443\u043c\u043c\u0430: 75.8\n\u041c\u0435\u043d\u0435\u0434\u0436\u0435\u0440: Manager Sergey\n\u041f\u043e\u043b\u043d\u0430\u044f \u0438\u043d\u0444\u043e\u0440\u043c\u0430\u0446\u0438\u044f \u043e \u0437\u0430\u043a\u0430\u0437\u0435 \u0432\u044b\u0441\u043b\u0430\u043d\u0430 \u043f\u043e \u043f\u043e\u0447\u0442\u0435."}}
+
+
+2020-09-10 12:38:23
+Content to send: {"method":"answerCallbackQuery","text":"\u0417\u0430\u043a\u0430\u0437 \u2116173 \u0443\u0436\u0435 \u043f\u0440\u0438\u043d\u044f\u0442","callback_query_id":"1300134614375514073","show_alert":"true"}
+
+
+2020-09-10 12:38:24
+Answer content: {"ok":true,"result":true}
+
+
+2020-09-10 12:38:24
+Content to send: {"method":"editMessageReplyMarkup","chat_id":302711179,"message_id":183,"reply_markup":{"inline_keyboard":[]}}
+
+
+2020-09-10 12:38:24
+Answer content: {"ok":true,"result":{"message_id":183,"from":{"id":799513981,"is_bot":true,"first_name":"imigetest","username":"imigetestbot"},"chat":{"id":302711179,"first_name":"Sergejs","last_name":"Germanovs","username":"germanovs","type":"private"},"date":1599727488,"edit_date":1599730704,"text":"\u041d\u043e\u0432\u044b\u0439 \u0437\u0430\u043a\u0430\u0437 \u2116173\n\u0417\u0430\u043a\u0430\u0437\u0447\u0438\u043a: test\n\u0422\u0435\u043b\u0435\u0444\u043e\u043d: 123\n\u041f\u043e\u0447\u0442\u0430: 1@a.a\n\u0412\u0441\u0435\u0433\u043e \u0442\u043e\u0432\u0430\u0440\u043e\u0432: 1\n\u0421\u0443\u043c\u043c\u0430: 75.8\n\u041c\u0435\u043d\u0435\u0434\u0436\u0435\u0440: Manager Sergey\n\u041f\u043e\u043b\u043d\u0430\u044f \u0438\u043d\u0444\u043e\u0440\u043c\u0430\u0446\u0438\u044f \u043e \u0437\u0430\u043a\u0430\u0437\u0435 \u0432\u044b\u0441\u043b\u0430\u043d\u0430 \u043f\u043e \u043f\u043e\u0447\u0442\u0435."}}
+
+
+2020-09-10 12:38:26
+Content to send: {"method":"answerCallbackQuery","text":"\u0412\u044b \u043f\u0440\u0438\u043d\u044f\u043b\u0438 \u0437\u0430\u043a\u0430\u0437 \u2116174","callback_query_id":"1300134614602202732","show_alert":"true"}
+
+
+2020-09-10 12:38:26
+Answer content: {"ok":true,"result":true}
+
+
+2020-09-10 12:38:26
+Content to send: {"method":"editMessageReplyMarkup","chat_id":302711179,"message_id":185,"reply_markup":{"inline_keyboard":[]}}
+
+
+2020-09-10 12:38:26
+Answer content: {"ok":true,"result":{"message_id":185,"from":{"id":799513981,"is_bot":true,"first_name":"imigetest","username":"imigetestbot"},"chat":{"id":302711179,"first_name":"Sergejs","last_name":"Germanovs","username":"germanovs","type":"private"},"date":1599727700,"edit_date":1599730706,"text":"\u041d\u043e\u0432\u044b\u0439 \u0437\u0430\u043a\u0430\u0437 \u2116174\n\u0417\u0430\u043a\u0430\u0437\u0447\u0438\u043a: Test user\n\u0422\u0435\u043b\u0435\u0444\u043e\u043d: 123\n\u041f\u043e\u0447\u0442\u0430: 1@a.a\n\u0412\u0441\u0435\u0433\u043e \u0442\u043e\u0432\u0430\u0440\u043e\u0432: 1\n\u0421\u0443\u043c\u043c\u0430: 75.8\n\u041c\u0435\u043d\u0435\u0434\u0436\u0435\u0440: Manager Sergey\n\u041f\u043e\u043b\u043d\u0430\u044f \u0438\u043d\u0444\u043e\u0440\u043c\u0430\u0446\u0438\u044f \u043e \u0437\u0430\u043a\u0430\u0437\u0435 \u0432\u044b\u0441\u043b\u0430\u043d\u0430 \u043f\u043e \u043f\u043e\u0447\u0442\u0435."}}
+
+
+2020-09-10 12:38:26
+Content to send: {"method":"sendMessage","text":"Manager Sergey \u043f\u0440\u0438\u043d\u044f\u043b(\u0430) \u0437\u0430\u043a\u0430\u0437 \u2116174","chat_id":"302711179","disable_notification":"true"}
+
+
+2020-09-10 12:38:26
+Answer content: {"ok":true,"result":{"message_id":202,"from":{"id":799513981,"is_bot":true,"first_name":"imigetest","username":"imigetestbot"},"chat":{"id":302711179,"first_name":"Sergejs","last_name":"Germanovs","username":"germanovs","type":"private"},"date":1599730706,"text":"Manager Sergey \u043f\u0440\u0438\u043d\u044f\u043b(\u0430) \u0437\u0430\u043a\u0430\u0437 \u2116174"}}
+
+
+2020-09-10 12:38:26
+Content to send: {"method":"sendMessage","text":"Manager Sergey \u043f\u0440\u0438\u043d\u044f\u043b(\u0430) \u0437\u0430\u043a\u0430\u0437 \u2116174","chat_id":"690248351","disable_notification":"true"}
+
+
+2020-09-10 12:38:27
+Answer content: {"ok":true,"result":{"message_id":203,"from":{"id":799513981,"is_bot":true,"first_name":"imigetest","username":"imigetestbot"},"chat":{"id":690248351,"first_name":"Alina","last_name":"Germanova","username":"Alina_doberman","type":"private"},"date":1599730707,"text":"Manager Sergey \u043f\u0440\u0438\u043d\u044f\u043b(\u0430) \u0437\u0430\u043a\u0430\u0437 \u2116174"}}
+
+
+2020-09-10 16:27:09
+Content to send: {"method":"sendMessage","text":"Manager: Manager Sergey\nMessage ID: \nOrder ID: 48","chat_id":302711179,"disable_notification":"true"}
+
+
+2020-09-10 16:27:10
+Answer content: {"ok":true,"result":{"message_id":207,"from":{"id":799513981,"is_bot":true,"first_name":"imigetest","username":"imigetestbot"},"chat":{"id":302711179,"first_name":"Sergejs","last_name":"Germanovs","username":"germanovs","type":"private"},"date":1599744430,"text":"Manager: Manager Sergey\nMessage ID: \nOrder ID: 48"}}
+
+
+2020-09-10 16:27:13
+Content to send: {"method":"sendMessage","text":"Manager: Manager Sergey\nMessage ID: \nOrder ID: 48","chat_id":302711179,"disable_notification":"true"}
+
+
+2020-09-10 16:27:14
+Answer content: {"ok":true,"result":{"message_id":208,"from":{"id":799513981,"is_bot":true,"first_name":"imigetest","username":"imigetestbot"},"chat":{"id":302711179,"first_name":"Sergejs","last_name":"Germanovs","username":"germanovs","type":"private"},"date":1599744433,"text":"Manager: Manager Sergey\nMessage ID: \nOrder ID: 48"}}
+
+
+2020-09-10 16:36:26
+Content to send: {"method":"answerCallbackQuery","text":"\u0412\u044b \u043f\u0440\u0438\u043d\u044f\u043b\u0438 \u0437\u0430\u044f\u0432\u043a\u0443 \u043d\u0430 \u043e\u0431\u0440\u0430\u0442\u043d\u044b\u0439 \u0437\u0432\u043e\u043d\u043e\u043a \u211649","callback_query_id":"1300134614782088227","show_alert":"true"}
+
+
+2020-09-10 16:36:26
+Answer content: {"ok":true,"result":true}
+
+
+2020-09-10 16:36:26
+Content to send: {"method":"editMessageReplyMarkup","chat_id":302711179,"message_id":210,"reply_markup":{"inline_keyboard":[]}}
+
+
+2020-09-10 16:36:27
+Answer content: {"ok":true,"result":{"message_id":210,"from":{"id":799513981,"is_bot":true,"first_name":"imigetest","username":"imigetestbot"},"chat":{"id":302711179,"first_name":"Sergejs","last_name":"Germanovs","username":"germanovs","type":"private"},"date":1599744983,"edit_date":1599744987,"text":"\u041f\u0440\u043e\u0441\u0438\u0442 \u043f\u0435\u0440\u0435\u0437\u0432\u043e\u043d\u0438\u0442\u044c (imige.ru): test\n\u0422\u0435\u043b\u0435\u0444\u043e\u043d: 6","entities":[{"offset":20,"length":8,"type":"url"}]}}
+
+
+2020-09-10 16:36:27
+Content to send: {"method":"sendMessage","text":"Manager Sergey \u043f\u0440\u0438\u043d\u044f\u043b(\u0430) \u0437\u0430\u044f\u0432\u043a\u0443 \u043d\u0430 \u043e\u0431\u0440\u0430\u0442\u043d\u044b\u0439 \u0437\u0432\u043e\u043d\u043e\u043a \u211649","chat_id":"302711179","disable_notification":"true"}
+
+
+2020-09-10 16:36:27
+Answer content: {"ok":true,"result":{"message_id":212,"from":{"id":799513981,"is_bot":true,"first_name":"imigetest","username":"imigetestbot"},"chat":{"id":302711179,"first_name":"Sergejs","last_name":"Germanovs","username":"germanovs","type":"private"},"date":1599744987,"text":"Manager Sergey \u043f\u0440\u0438\u043d\u044f\u043b(\u0430) \u0437\u0430\u044f\u0432\u043a\u0443 \u043d\u0430 \u043e\u0431\u0440\u0430\u0442\u043d\u044b\u0439 \u0437\u0432\u043e\u043d\u043e\u043a \u211649"}}
+
+
+2020-09-10 16:36:27
+Content to send: {"method":"sendMessage","text":"Manager Sergey \u043f\u0440\u0438\u043d\u044f\u043b(\u0430) \u0437\u0430\u044f\u0432\u043a\u0443 \u043d\u0430 \u043e\u0431\u0440\u0430\u0442\u043d\u044b\u0439 \u0437\u0432\u043e\u043d\u043e\u043a \u211649","chat_id":"690248351","disable_notification":"true"}
+
+
+2020-09-10 16:36:27
+Answer content: {"ok":true,"result":{"message_id":213,"from":{"id":799513981,"is_bot":true,"first_name":"imigetest","username":"imigetestbot"},"chat":{"id":690248351,"first_name":"Alina","last_name":"Germanova","username":"Alina_doberman","type":"private"},"date":1599744987,"text":"Manager Sergey \u043f\u0440\u0438\u043d\u044f\u043b(\u0430) \u0437\u0430\u044f\u0432\u043a\u0443 \u043d\u0430 \u043e\u0431\u0440\u0430\u0442\u043d\u044b\u0439 \u0437\u0432\u043e\u043d\u043e\u043a \u211649"}}
+
+
+2020-09-10 16:36:27
+Content to send: {"method":"sendMessage","text":"Manager Sergey \u043f\u0440\u0438\u043d\u044f\u043b(\u0430) \u0437\u0430\u044f\u0432\u043a\u0443 \u043d\u0430 \u043e\u0431\u0440\u0430\u0442\u043d\u044b\u0439 \u0437\u0432\u043e\u043d\u043e\u043a \u211649","chat_id":"302711179","disable_notification":"true"}
+
+
+2020-09-10 16:36:28
+Answer content: {"ok":true,"result":{"message_id":214,"from":{"id":799513981,"is_bot":true,"first_name":"imigetest","username":"imigetestbot"},"chat":{"id":302711179,"first_name":"Sergejs","last_name":"Germanovs","username":"germanovs","type":"private"},"date":1599744987,"text":"Manager Sergey \u043f\u0440\u0438\u043d\u044f\u043b(\u0430) \u0437\u0430\u044f\u0432\u043a\u0443 \u043d\u0430 \u043e\u0431\u0440\u0430\u0442\u043d\u044b\u0439 \u0437\u0432\u043e\u043d\u043e\u043a \u211649"}}
+
+
+2020-09-10 16:36:36
+Content to send: {"method":"answerCallbackQuery","text":"\u0412\u044b \u043f\u0440\u0438\u043d\u044f\u043b\u0438 \u0437\u0430\u044f\u0432\u043a\u0443 \u043d\u0430 \u043e\u0431\u0440\u0430\u0442\u043d\u044b\u0439 \u0437\u0432\u043e\u043d\u043e\u043a \u211648","callback_query_id":"1300134616244807873","show_alert":"true"}
+
+
+2020-09-10 16:36:36
+Answer content: {"ok":true,"result":true}
+
+
+2020-09-10 16:36:36
+Content to send: {"method":"editMessageReplyMarkup","chat_id":302711179,"message_id":205,"reply_markup":{"inline_keyboard":[]}}
+
+
+2020-09-10 16:36:36
+Answer content: {"ok":true,"result":{"message_id":205,"from":{"id":799513981,"is_bot":true,"first_name":"imigetest","username":"imigetestbot"},"chat":{"id":302711179,"first_name":"Sergejs","last_name":"Germanovs","username":"germanovs","type":"private"},"date":1599744422,"edit_date":1599744996,"text":"\u041f\u0440\u043e\u0441\u0438\u0442 \u043f\u0435\u0440\u0435\u0437\u0432\u043e\u043d\u0438\u0442\u044c (imige.ru): test\n\u0422\u0435\u043b\u0435\u0444\u043e\u043d: 5","entities":[{"offset":20,"length":8,"type":"url"}]}}
+
+
+2020-09-10 16:36:36
+Content to send: {"method":"sendMessage","text":"Manager Sergey \u043f\u0440\u0438\u043d\u044f\u043b(\u0430) \u0437\u0430\u044f\u0432\u043a\u0443 \u043d\u0430 \u043e\u0431\u0440\u0430\u0442\u043d\u044b\u0439 \u0437\u0432\u043e\u043d\u043e\u043a \u211648","chat_id":"302711179","disable_notification":"true"}
+
+
+2020-09-10 16:36:37
+Answer content: {"ok":true,"result":{"message_id":215,"from":{"id":799513981,"is_bot":true,"first_name":"imigetest","username":"imigetestbot"},"chat":{"id":302711179,"first_name":"Sergejs","last_name":"Germanovs","username":"germanovs","type":"private"},"date":1599744997,"text":"Manager Sergey \u043f\u0440\u0438\u043d\u044f\u043b(\u0430) \u0437\u0430\u044f\u0432\u043a\u0443 \u043d\u0430 \u043e\u0431\u0440\u0430\u0442\u043d\u044b\u0439 \u0437\u0432\u043e\u043d\u043e\u043a \u211648"}}
+
+
+2020-09-10 16:36:37
+Content to send: {"method":"sendMessage","text":"Manager Sergey \u043f\u0440\u0438\u043d\u044f\u043b(\u0430) \u0437\u0430\u044f\u0432\u043a\u0443 \u043d\u0430 \u043e\u0431\u0440\u0430\u0442\u043d\u044b\u0439 \u0437\u0432\u043e\u043d\u043e\u043a \u211648","chat_id":"690248351","disable_notification":"true"}
+
+
+2020-09-10 16:36:37
+Answer content: {"ok":true,"result":{"message_id":216,"from":{"id":799513981,"is_bot":true,"first_name":"imigetest","username":"imigetestbot"},"chat":{"id":690248351,"first_name":"Alina","last_name":"Germanova","username":"Alina_doberman","type":"private"},"date":1599744997,"text":"Manager Sergey \u043f\u0440\u0438\u043d\u044f\u043b(\u0430) \u0437\u0430\u044f\u0432\u043a\u0443 \u043d\u0430 \u043e\u0431\u0440\u0430\u0442\u043d\u044b\u0439 \u0437\u0432\u043e\u043d\u043e\u043a \u211648"}}
+
+
+2020-09-10 16:36:37
+Content to send: {"method":"sendMessage","text":"Manager Sergey \u043f\u0440\u0438\u043d\u044f\u043b(\u0430) \u0437\u0430\u044f\u0432\u043a\u0443 \u043d\u0430 \u043e\u0431\u0440\u0430\u0442\u043d\u044b\u0439 \u0437\u0432\u043e\u043d\u043e\u043a \u211648","chat_id":"302711179","disable_notification":"true"}
+
+
+2020-09-10 16:36:37
+Answer content: {"ok":true,"result":{"message_id":217,"from":{"id":799513981,"is_bot":true,"first_name":"imigetest","username":"imigetestbot"},"chat":{"id":302711179,"first_name":"Sergejs","last_name":"Germanovs","username":"germanovs","type":"private"},"date":1599744997,"text":"Manager Sergey \u043f\u0440\u0438\u043d\u044f\u043b(\u0430) \u0437\u0430\u044f\u0432\u043a\u0443 \u043d\u0430 \u043e\u0431\u0440\u0430\u0442\u043d\u044b\u0439 \u0437\u0432\u043e\u043d\u043e\u043a \u211648"}}
+
+
+2020-09-10 16:46:35
+Content to send: {"method":"answerCallbackQuery","text":"\u0412\u044b \u043f\u0440\u0438\u043d\u044f\u043b\u0438 \u0437\u0430\u044f\u0432\u043a\u0443 \u043d\u0430 \u043e\u0431\u0440\u0430\u0442\u043d\u044b\u0439 \u0437\u0432\u043e\u043d\u043e\u043a \u211632","callback_query_id":"1300134613999883624","show_alert":"true"}
+
+
+2020-09-10 16:46:35
+Answer content: {"ok":true,"result":true}
+
+
+2020-09-10 16:46:35
+Content to send: {"method":"editMessageReplyMarkup","chat_id":302711179,"message_id":219,"reply_markup":{"inline_keyboard":[]}}
+
+
+2020-09-10 16:46:35
+Answer content: {"ok":true,"result":{"message_id":219,"from":{"id":799513981,"is_bot":true,"first_name":"imigetest","username":"imigetestbot"},"chat":{"id":302711179,"first_name":"Sergejs","last_name":"Germanovs","username":"germanovs","type":"private"},"date":1599745587,"edit_date":1599745595,"text":"\u041d\u043e\u0432\u044b\u0439 \u0437\u0430\u043f\u0440\u043e\u0441 \u043d\u0430 \u0438\u043d\u0434\u0438\u0432\u0438\u0434\u0443\u0430\u043b\u044c\u043d\u044b\u0439 \u0437\u0430\u043a\u0430\u0437.\n\u041d\u043e\u043c\u0435\u0440 \u0437\u0430\u043f\u0440\u043e\u0441\u0430: 32\n\u0418\u043c\u044f: test\n\u0422\u0435\u043b\u0435\u0444\u043e\u043d: 123\n\u041f\u043e\u0447\u0442\u0430: \n\u0414\u0430\u0442\u0430 \u0438 \u0432\u0440\u0435\u043c\u044f: 10.09.2020, 16:46:26\ntest d"}}
+
+
+2020-09-10 16:46:35
+Content to send: {"method":"sendMessage","text":"Manager Sergey \u043f\u0440\u0438\u043d\u044f\u043b(\u0430) \u0437\u0430\u044f\u0432\u043a\u0443 \u043d\u0430 \u043e\u0431\u0440\u0430\u0442\u043d\u044b\u0439 \u0437\u0432\u043e\u043d\u043e\u043a \u211632","chat_id":"302711179","disable_notification":"true"}
+
+
+2020-09-10 16:46:35
+Answer content: {"ok":true,"result":{"message_id":221,"from":{"id":799513981,"is_bot":true,"first_name":"imigetest","username":"imigetestbot"},"chat":{"id":302711179,"first_name":"Sergejs","last_name":"Germanovs","username":"germanovs","type":"private"},"date":1599745595,"text":"Manager Sergey \u043f\u0440\u0438\u043d\u044f\u043b(\u0430) \u0437\u0430\u044f\u0432\u043a\u0443 \u043d\u0430 \u043e\u0431\u0440\u0430\u0442\u043d\u044b\u0439 \u0437\u0432\u043e\u043d\u043e\u043a \u211632"}}
+
+
+2020-09-10 16:46:35
+Content to send: {"method":"sendMessage","text":"Manager Sergey \u043f\u0440\u0438\u043d\u044f\u043b(\u0430) \u0437\u0430\u044f\u0432\u043a\u0443 \u043d\u0430 \u043e\u0431\u0440\u0430\u0442\u043d\u044b\u0439 \u0437\u0432\u043e\u043d\u043e\u043a \u211632","chat_id":"690248351","disable_notification":"true"}
+
+
+2020-09-10 16:46:36
+Answer content: {"ok":true,"result":{"message_id":222,"from":{"id":799513981,"is_bot":true,"first_name":"imigetest","username":"imigetestbot"},"chat":{"id":690248351,"first_name":"Alina","last_name":"Germanova","username":"Alina_doberman","type":"private"},"date":1599745596,"text":"Manager Sergey \u043f\u0440\u0438\u043d\u044f\u043b(\u0430) \u0437\u0430\u044f\u0432\u043a\u0443 \u043d\u0430 \u043e\u0431\u0440\u0430\u0442\u043d\u044b\u0439 \u0437\u0432\u043e\u043d\u043e\u043a \u211632"}}
+
+
+2020-09-10 16:46:36
+Content to send: {"method":"sendMessage","text":"Manager Sergey \u043f\u0440\u0438\u043d\u044f\u043b(\u0430) \u0437\u0430\u044f\u0432\u043a\u0443 \u043d\u0430 \u043e\u0431\u0440\u0430\u0442\u043d\u044b\u0439 \u0437\u0432\u043e\u043d\u043e\u043a \u211632","chat_id":"302711179","disable_notification":"true"}
+
+
+2020-09-10 16:46:36
+Answer content: {"ok":true,"result":{"message_id":223,"from":{"id":799513981,"is_bot":true,"first_name":"imigetest","username":"imigetestbot"},"chat":{"id":302711179,"first_name":"Sergejs","last_name":"Germanovs","username":"germanovs","type":"private"},"date":1599745596,"text":"Manager Sergey \u043f\u0440\u0438\u043d\u044f\u043b(\u0430) \u0437\u0430\u044f\u0432\u043a\u0443 \u043d\u0430 \u043e\u0431\u0440\u0430\u0442\u043d\u044b\u0439 \u0437\u0432\u043e\u043d\u043e\u043a \u211632"}}
+
+
+2020-09-10 16:54:28
+Content to send: {"method":"answerCallbackQuery","text":"\u0412\u044b \u043f\u0440\u0438\u043d\u044f\u043b\u0438 \u0437\u0430\u044f\u0432\u043a\u0443 \u043d\u0430 \u0438\u043d\u0434\u0438\u0432\u0438\u0434\u0443\u0430\u043b\u044c\u043d\u044b\u0439 \u0437\u0430\u043a\u0430\u0437 \u211633","callback_query_id":"1300134616719106565","show_alert":"true"}
+
+
+2020-09-10 16:54:28
+Answer content: {"ok":true,"result":true}
+
+
+2020-09-10 16:54:28
+Content to send: {"method":"editMessageReplyMarkup","chat_id":302711179,"message_id":225,"reply_markup":{"inline_keyboard":[]}}
+
+
+2020-09-10 16:54:28
+Answer content: {"ok":true,"result":{"message_id":225,"from":{"id":799513981,"is_bot":true,"first_name":"imigetest","username":"imigetestbot"},"chat":{"id":302711179,"first_name":"Sergejs","last_name":"Germanovs","username":"germanovs","type":"private"},"date":1599746063,"edit_date":1599746068,"text":"\u041d\u043e\u0432\u044b\u0439 \u0437\u0430\u043f\u0440\u043e\u0441 \u043d\u0430 \u0438\u043d\u0434\u0438\u0432\u0438\u0434\u0443\u0430\u043b\u044c\u043d\u044b\u0439 \u0437\u0430\u043a\u0430\u0437.\n\u041d\u043e\u043c\u0435\u0440 \u0437\u0430\u043f\u0440\u043e\u0441\u0430: 33\n\u0418\u043c\u044f: test\n\u0422\u0435\u043b\u0435\u0444\u043e\u043d: 123\n\u041f\u043e\u0447\u0442\u0430: \n\u0414\u0430\u0442\u0430 \u0438 \u0432\u0440\u0435\u043c\u044f: 10.09.2020, 16:54:22\ntest 1"}}
+
+
+2020-09-10 16:54:28
+Content to send: {"method":"sendMessage","text":"Manager Sergey \u043f\u0440\u0438\u043d\u044f\u043b(\u0430) \u0437\u0430\u044f\u0432\u043a\u0443 \u043d\u0430 \u0438\u043d\u0434\u0438\u0432\u0438\u0434\u0443\u0430\u043b\u044c\u043d\u044b\u0439 \u0437\u0430\u043a\u0430\u0437 \u211633","chat_id":"302711179","disable_notification":"true"}
+
+
+2020-09-10 16:54:29
+Answer content: {"ok":true,"result":{"message_id":227,"from":{"id":799513981,"is_bot":true,"first_name":"imigetest","username":"imigetestbot"},"chat":{"id":302711179,"first_name":"Sergejs","last_name":"Germanovs","username":"germanovs","type":"private"},"date":1599746068,"text":"Manager Sergey \u043f\u0440\u0438\u043d\u044f\u043b(\u0430) \u0437\u0430\u044f\u0432\u043a\u0443 \u043d\u0430 \u0438\u043d\u0434\u0438\u0432\u0438\u0434\u0443\u0430\u043b\u044c\u043d\u044b\u0439 \u0437\u0430\u043a\u0430\u0437 \u211633"}}
+
+
+2020-09-10 16:54:29
+Content to send: {"method":"sendMessage","text":"Manager Sergey \u043f\u0440\u0438\u043d\u044f\u043b(\u0430) \u0437\u0430\u044f\u0432\u043a\u0443 \u043d\u0430 \u0438\u043d\u0434\u0438\u0432\u0438\u0434\u0443\u0430\u043b\u044c\u043d\u044b\u0439 \u0437\u0430\u043a\u0430\u0437 \u211633","chat_id":"690248351","disable_notification":"true"}
+
+
+2020-09-10 16:54:29
+Answer content: {"ok":true,"result":{"message_id":228,"from":{"id":799513981,"is_bot":true,"first_name":"imigetest","username":"imigetestbot"},"chat":{"id":690248351,"first_name":"Alina","last_name":"Germanova","username":"Alina_doberman","type":"private"},"date":1599746069,"text":"Manager Sergey \u043f\u0440\u0438\u043d\u044f\u043b(\u0430) \u0437\u0430\u044f\u0432\u043a\u0443 \u043d\u0430 \u0438\u043d\u0434\u0438\u0432\u0438\u0434\u0443\u0430\u043b\u044c\u043d\u044b\u0439 \u0437\u0430\u043a\u0430\u0437 \u211633"}}
+
+
+2020-09-10 16:54:29
+Content to send: {"method":"sendMessage","text":"Manager Sergey \u043f\u0440\u0438\u043d\u044f\u043b(\u0430) \u0437\u0430\u044f\u0432\u043a\u0443 \u043d\u0430 \u0438\u043d\u0434\u0438\u0432\u0438\u0434\u0443\u0430\u043b\u044c\u043d\u044b\u0439 \u0437\u0430\u043a\u0430\u0437 \u211633","chat_id":"302711179","disable_notification":"true"}
+
+
+2020-09-10 16:54:29
+Answer content: {"ok":true,"result":{"message_id":229,"from":{"id":799513981,"is_bot":true,"first_name":"imigetest","username":"imigetestbot"},"chat":{"id":302711179,"first_name":"Sergejs","last_name":"Germanovs","username":"germanovs","type":"private"},"date":1599746069,"text":"Manager Sergey \u043f\u0440\u0438\u043d\u044f\u043b(\u0430) \u0437\u0430\u044f\u0432\u043a\u0443 \u043d\u0430 \u0438\u043d\u0434\u0438\u0432\u0438\u0434\u0443\u0430\u043b\u044c\u043d\u044b\u0439 \u0437\u0430\u043a\u0430\u0437 \u211633"}}
+
+
+2020-09-10 16:54:54
+Content to send: {"method":"answerCallbackQuery","text":"\u0417\u0430\u044f\u0432\u043a\u0430 \u211648 \u0443\u0436\u0435 \u043f\u0440\u0438\u043d\u044f\u0442\u0430","callback_query_id":"2964594095276951833","show_alert":"true"}
+
+
+2020-09-10 16:54:55
+Answer content: {"ok":true,"result":true}
+
+
+2020-09-10 16:54:55
+Content to send: {"method":"editMessageReplyMarkup","chat_id":690248351,"message_id":206,"reply_markup":{"inline_keyboard":[]}}
+
+
+2020-09-10 16:54:55
+Answer content: {"ok":true,"result":{"message_id":206,"from":{"id":799513981,"is_bot":true,"first_name":"imigetest","username":"imigetestbot"},"chat":{"id":690248351,"first_name":"Alina","last_name":"Germanova","username":"Alina_doberman","type":"private"},"date":1599744423,"edit_date":1599746095,"text":"\u041f\u0440\u043e\u0441\u0438\u0442 \u043f\u0435\u0440\u0435\u0437\u0432\u043e\u043d\u0438\u0442\u044c (imige.ru): test\n\u0422\u0435\u043b\u0435\u0444\u043e\u043d: 5","entities":[{"offset":20,"length":8,"type":"url"}]}}
+
+
+2020-09-10 16:54:57
+Content to send: {"method":"answerCallbackQuery","text":"\u0417\u0430\u044f\u0432\u043a\u0430 \u211649 \u0443\u0436\u0435 \u043f\u0440\u0438\u043d\u044f\u0442\u0430","callback_query_id":"2964594094308348526","show_alert":"true"}
+
+
+2020-09-10 16:54:57
+Answer content: {"ok":true,"result":true}
+
+
+2020-09-10 16:54:57
+Content to send: {"method":"editMessageReplyMarkup","chat_id":690248351,"message_id":211,"reply_markup":{"inline_keyboard":[]}}
+
+
+2020-09-10 16:54:57
+Answer content: {"ok":true,"result":{"message_id":211,"from":{"id":799513981,"is_bot":true,"first_name":"imigetest","username":"imigetestbot"},"chat":{"id":690248351,"first_name":"Alina","last_name":"Germanova","username":"Alina_doberman","type":"private"},"date":1599744983,"edit_date":1599746097,"text":"\u041f\u0440\u043e\u0441\u0438\u0442 \u043f\u0435\u0440\u0435\u0437\u0432\u043e\u043d\u0438\u0442\u044c (imige.ru): test\n\u0422\u0435\u043b\u0435\u0444\u043e\u043d: 6","entities":[{"offset":20,"length":8,"type":"url"}]}}
+
+
+2020-09-10 16:55:00
+Content to send: {"method":"answerCallbackQuery","text":"\u0412\u044b \u043f\u0440\u0438\u043d\u044f\u043b\u0438 \u0437\u0430\u044f\u0432\u043a\u0443 \u043d\u0430 \u0438\u043d\u0434\u0438\u0432\u0438\u0434\u0443\u0430\u043b\u044c\u043d\u044b\u0439 \u0437\u0430\u043a\u0430\u0437 \u211632","callback_query_id":"2964594096102613171","show_alert":"true"}
+
+
+2020-09-10 16:55:00
+Answer content: {"ok":true,"result":true}
+
+
+2020-09-10 16:55:00
+Content to send: {"method":"editMessageReplyMarkup","chat_id":690248351,"message_id":220,"reply_markup":{"inline_keyboard":[]}}
+
+
+2020-09-10 16:55:01
+Answer content: {"ok":true,"result":{"message_id":220,"from":{"id":799513981,"is_bot":true,"first_name":"imigetest","username":"imigetestbot"},"chat":{"id":690248351,"first_name":"Alina","last_name":"Germanova","username":"Alina_doberman","type":"private"},"date":1599745587,"edit_date":1599746101,"text":"\u041d\u043e\u0432\u044b\u0439 \u0437\u0430\u043f\u0440\u043e\u0441 \u043d\u0430 \u0438\u043d\u0434\u0438\u0432\u0438\u0434\u0443\u0430\u043b\u044c\u043d\u044b\u0439 \u0437\u0430\u043a\u0430\u0437.\n\u041d\u043e\u043c\u0435\u0440 \u0437\u0430\u043f\u0440\u043e\u0441\u0430: 32\n\u0418\u043c\u044f: test\n\u0422\u0435\u043b\u0435\u0444\u043e\u043d: 123\n\u041f\u043e\u0447\u0442\u0430: \n\u0414\u0430\u0442\u0430 \u0438 \u0432\u0440\u0435\u043c\u044f: 10.09.2020, 16:46:26\ntest d"}}
+
+
+2020-09-10 16:55:01
+Content to send: {"method":"sendMessage","text":"Manager Alina \u043f\u0440\u0438\u043d\u044f\u043b(\u0430) \u0437\u0430\u044f\u0432\u043a\u0443 \u043d\u0430 \u0438\u043d\u0434\u0438\u0432\u0438\u0434\u0443\u0430\u043b\u044c\u043d\u044b\u0439 \u0437\u0430\u043a\u0430\u0437 \u211632","chat_id":"302711179","disable_notification":"true"}
+
+
+2020-09-10 16:55:01
+Answer content: {"ok":true,"result":{"message_id":230,"from":{"id":799513981,"is_bot":true,"first_name":"imigetest","username":"imigetestbot"},"chat":{"id":302711179,"first_name":"Sergejs","last_name":"Germanovs","username":"germanovs","type":"private"},"date":1599746101,"text":"Manager Alina \u043f\u0440\u0438\u043d\u044f\u043b(\u0430) \u0437\u0430\u044f\u0432\u043a\u0443 \u043d\u0430 \u0438\u043d\u0434\u0438\u0432\u0438\u0434\u0443\u0430\u043b\u044c\u043d\u044b\u0439 \u0437\u0430\u043a\u0430\u0437 \u211632"}}
+
+
+2020-09-10 16:55:01
+Content to send: {"method":"sendMessage","text":"Manager Alina \u043f\u0440\u0438\u043d\u044f\u043b(\u0430) \u0437\u0430\u044f\u0432\u043a\u0443 \u043d\u0430 \u0438\u043d\u0434\u0438\u0432\u0438\u0434\u0443\u0430\u043b\u044c\u043d\u044b\u0439 \u0437\u0430\u043a\u0430\u0437 \u211632","chat_id":"690248351","disable_notification":"true"}
+
+
+2020-09-10 16:55:01
+Answer content: {"ok":true,"result":{"message_id":231,"from":{"id":799513981,"is_bot":true,"first_name":"imigetest","username":"imigetestbot"},"chat":{"id":690248351,"first_name":"Alina","last_name":"Germanova","username":"Alina_doberman","type":"private"},"date":1599746101,"text":"Manager Alina \u043f\u0440\u0438\u043d\u044f\u043b(\u0430) \u0437\u0430\u044f\u0432\u043a\u0443 \u043d\u0430 \u0438\u043d\u0434\u0438\u0432\u0438\u0434\u0443\u0430\u043b\u044c\u043d\u044b\u0439 \u0437\u0430\u043a\u0430\u0437 \u211632"}}
+
+
+2020-09-10 16:55:01
+Content to send: {"method":"sendMessage","text":"Manager Alina \u043f\u0440\u0438\u043d\u044f\u043b(\u0430) \u0437\u0430\u044f\u0432\u043a\u0443 \u043d\u0430 \u0438\u043d\u0434\u0438\u0432\u0438\u0434\u0443\u0430\u043b\u044c\u043d\u044b\u0439 \u0437\u0430\u043a\u0430\u0437 \u211632","chat_id":"302711179","disable_notification":"true"}
+
+
+2020-09-10 16:55:01
+Answer content: {"ok":true,"result":{"message_id":232,"from":{"id":799513981,"is_bot":true,"first_name":"imigetest","username":"imigetestbot"},"chat":{"id":302711179,"first_name":"Sergejs","last_name":"Germanovs","username":"germanovs","type":"private"},"date":1599746101,"text":"Manager Alina \u043f\u0440\u0438\u043d\u044f\u043b(\u0430) \u0437\u0430\u044f\u0432\u043a\u0443 \u043d\u0430 \u0438\u043d\u0434\u0438\u0432\u0438\u0434\u0443\u0430\u043b\u044c\u043d\u044b\u0439 \u0437\u0430\u043a\u0430\u0437 \u211632"}}
+
+
+2020-09-10 16:55:06
+Content to send: {"method":"answerCallbackQuery","text":"\u0417\u0430\u044f\u0432\u043a\u0430 \u043d\u0430 \u0437\u0430\u043a\u0430\u0437 \u211633 \u0443\u0436\u0435 \u043f\u0440\u0438\u043d\u044f\u0442\u0430","callback_query_id":"2964594096677340480","show_alert":"true"}
+
+
+2020-09-10 16:55:07
+Answer content: {"ok":true,"result":true}
+
+
+2020-09-10 16:55:07
+Content to send: {"method":"editMessageReplyMarkup","chat_id":690248351,"message_id":226,"reply_markup":{"inline_keyboard":[]}}
+
+
+2020-09-10 16:55:07
+Answer content: {"ok":true,"result":{"message_id":226,"from":{"id":799513981,"is_bot":true,"first_name":"imigetest","username":"imigetestbot"},"chat":{"id":690248351,"first_name":"Alina","last_name":"Germanova","username":"Alina_doberman","type":"private"},"date":1599746063,"edit_date":1599746107,"text":"\u041d\u043e\u0432\u044b\u0439 \u0437\u0430\u043f\u0440\u043e\u0441 \u043d\u0430 \u0438\u043d\u0434\u0438\u0432\u0438\u0434\u0443\u0430\u043b\u044c\u043d\u044b\u0439 \u0437\u0430\u043a\u0430\u0437.\n\u041d\u043e\u043c\u0435\u0440 \u0437\u0430\u043f\u0440\u043e\u0441\u0430: 33\n\u0418\u043c\u044f: test\n\u0422\u0435\u043b\u0435\u0444\u043e\u043d: 123\n\u041f\u043e\u0447\u0442\u0430: \n\u0414\u0430\u0442\u0430 \u0438 \u0432\u0440\u0435\u043c\u044f: 10.09.2020, 16:54:22\ntest 1"}}
+
+
+2020-09-12 09:44:22
+Content to send: {"method":"answerCallbackQuery","text":"\u0412\u044b \u043f\u0440\u0438\u043d\u044f\u043b\u0438 \u0437\u0430\u043a\u0430\u0437 \u2116173","callback_query_id":"2964594097825441843","show_alert":"true"}
+
+
+2020-09-12 09:44:23
+Answer content: {"ok":true,"result":true}
+
+
+2020-09-12 09:44:23
+Content to send: {"method":"editMessageReplyMarkup","chat_id":690248351,"message_id":235,"reply_markup":{"inline_keyboard":[]}}
+
+
+2020-09-12 09:44:23
+Answer content: {"ok":true,"result":{"message_id":235,"from":{"id":799513981,"is_bot":true,"first_name":"imigetest","username":"imigetestbot"},"chat":{"id":690248351,"first_name":"Alina","last_name":"Germanova","username":"Alina_doberman","type":"private"},"date":1599893046,"edit_date":1599893063,"text":"\u041d\u043e\u0432\u044b\u0439 \u0437\u0430\u043a\u0430\u0437 \u2116173\n\u0417\u0430\u043a\u0430\u0437\u0447\u0438\u043a: test\n\u0422\u0435\u043b\u0435\u0444\u043e\u043d: 123\n\u041f\u043e\u0447\u0442\u0430: 1@a.a\n\u0412\u0441\u0435\u0433\u043e \u0442\u043e\u0432\u0430\u0440\u043e\u0432: 1\n\u0421\u0443\u043c\u043c\u0430: 75.8\n\u041c\u0435\u043d\u0435\u0434\u0436\u0435\u0440: \u043b\u044e\u0431\u043e\u0439\n\u041f\u043e\u043b\u043d\u0430\u044f \u0438\u043d\u0444\u043e\u0440\u043c\u0430\u0446\u0438\u044f \u043e \u0437\u0430\u043a\u0430\u0437\u0435 \u0432\u044b\u0441\u043b\u0430\u043d\u0430 \u043f\u043e \u043f\u043e\u0447\u0442\u0435."}}
+
+
+2020-09-12 09:44:23
+Content to send: {"method":"sendMessage","text":"Manager Alina \u043f\u0440\u0438\u043d\u044f\u043b(\u0430) \u0437\u0430\u043a\u0430\u0437 \u2116173","chat_id":"302711179","disable_notification":"true"}
+
+
+2020-09-12 09:44:23
+Answer content: {"ok":true,"result":{"message_id":236,"from":{"id":799513981,"is_bot":true,"first_name":"imigetest","username":"imigetestbot"},"chat":{"id":302711179,"first_name":"Sergejs","last_name":"Germanovs","username":"germanovs","type":"private"},"date":1599893063,"text":"Manager Alina \u043f\u0440\u0438\u043d\u044f\u043b(\u0430) \u0437\u0430\u043a\u0430\u0437 \u2116173"}}
+
+
+2020-09-12 09:44:23
+Content to send: {"method":"sendMessage","text":"Manager Alina \u043f\u0440\u0438\u043d\u044f\u043b(\u0430) \u0437\u0430\u043a\u0430\u0437 \u2116173","chat_id":"690248351","disable_notification":"true"}
+
+
+2020-09-12 09:44:23
+Answer content: {"ok":true,"result":{"message_id":237,"from":{"id":799513981,"is_bot":true,"first_name":"imigetest","username":"imigetestbot"},"chat":{"id":690248351,"first_name":"Alina","last_name":"Germanova","username":"Alina_doberman","type":"private"},"date":1599893063,"text":"Manager Alina \u043f\u0440\u0438\u043d\u044f\u043b(\u0430) \u0437\u0430\u043a\u0430\u0437 \u2116173"}}
+
+
+2020-09-12 09:44:23
+Content to send: {"method":"sendMessage","text":"Manager Alina \u043f\u0440\u0438\u043d\u044f\u043b(\u0430) \u0437\u0430\u043a\u0430\u0437 \u2116173","chat_id":"302711179","disable_notification":"true"}
+
+
+2020-09-12 09:44:24
+Answer content: {"ok":true,"result":{"message_id":238,"from":{"id":799513981,"is_bot":true,"first_name":"imigetest","username":"imigetestbot"},"chat":{"id":302711179,"first_name":"Sergejs","last_name":"Germanovs","username":"germanovs","type":"private"},"date":1599893064,"text":"Manager Alina \u043f\u0440\u0438\u043d\u044f\u043b(\u0430) \u0437\u0430\u043a\u0430\u0437 \u2116173"}}
+
+
+2020-09-12 09:44:25
+Content to send: {"method":"answerCallbackQuery","text":"\u0417\u0430\u043a\u0430\u0437 \u2116173 \u0443\u0436\u0435 \u043f\u0440\u0438\u043d\u044f\u0442","callback_query_id":"1300134617814562933","show_alert":"true"}
+
+
+2020-09-12 09:44:26
+Answer content: {"ok":true,"result":true}
+
+
+2020-09-12 09:44:26
+Content to send: {"method":"editMessageReplyMarkup","chat_id":302711179,"message_id":234,"reply_markup":{"inline_keyboard":[]}}
+
+
+2020-09-12 09:44:26
+Answer content: {"ok":true,"result":{"message_id":234,"from":{"id":799513981,"is_bot":true,"first_name":"imigetest","username":"imigetestbot"},"chat":{"id":302711179,"first_name":"Sergejs","last_name":"Germanovs","username":"germanovs","type":"private"},"date":1599893046,"edit_date":1599893066,"text":"\u041d\u043e\u0432\u044b\u0439 \u0437\u0430\u043a\u0430\u0437 \u2116173\n\u0417\u0430\u043a\u0430\u0437\u0447\u0438\u043a: test\n\u0422\u0435\u043b\u0435\u0444\u043e\u043d: 123\n\u041f\u043e\u0447\u0442\u0430: 1@a.a\n\u0412\u0441\u0435\u0433\u043e \u0442\u043e\u0432\u0430\u0440\u043e\u0432: 1\n\u0421\u0443\u043c\u043c\u0430: 75.8\n\u041c\u0435\u043d\u0435\u0434\u0436\u0435\u0440: \u043b\u044e\u0431\u043e\u0439\n\u041f\u043e\u043b\u043d\u0430\u044f \u0438\u043d\u0444\u043e\u0440\u043c\u0430\u0446\u0438\u044f \u043e \u0437\u0430\u043a\u0430\u0437\u0435 \u0432\u044b\u0441\u043b\u0430\u043d\u0430 \u043f\u043e \u043f\u043e\u0447\u0442\u0435."}}
+
+
+2020-09-12 09:45:12
+Content to send: {"method":"answerCallbackQuery","text":"\u0412\u044b \u043f\u0440\u0438\u043d\u044f\u043b\u0438 \u0437\u0430\u043a\u0430\u0437 \u2116174","callback_query_id":"1300134614225040835","show_alert":"true"}
+
+
+2020-09-12 09:45:13
+Answer content: {"ok":true,"result":true}
+
+
+2020-09-12 09:45:13
+Content to send: {"method":"editMessageReplyMarkup","chat_id":302711179,"message_id":240,"reply_markup":{"inline_keyboard":[]}}
+
+
+2020-09-12 09:45:13
+Answer content: {"ok":true,"result":{"message_id":240,"from":{"id":799513981,"is_bot":true,"first_name":"imigetest","username":"imigetestbot"},"chat":{"id":302711179,"first_name":"Sergejs","last_name":"Germanovs","username":"germanovs","type":"private"},"date":1599893106,"edit_date":1599893113,"text":"\u041d\u043e\u0432\u044b\u0439 \u0437\u0430\u043a\u0430\u0437 \u2116174\n\u0417\u0430\u043a\u0430\u0437\u0447\u0438\u043a: Test user\n\u0422\u0435\u043b\u0435\u0444\u043e\u043d: 123\n\u041f\u043e\u0447\u0442\u0430: 1@a.a\n\u0412\u0441\u0435\u0433\u043e \u0442\u043e\u0432\u0430\u0440\u043e\u0432: 1\n\u0421\u0443\u043c\u043c\u0430: 75.8\n\u041c\u0435\u043d\u0435\u0434\u0436\u0435\u0440: Manager Sergey\n\u041f\u043e\u043b\u043d\u0430\u044f \u0438\u043d\u0444\u043e\u0440\u043c\u0430\u0446\u0438\u044f \u043e \u0437\u0430\u043a\u0430\u0437\u0435 \u0432\u044b\u0441\u043b\u0430\u043d\u0430 \u043f\u043e \u043f\u043e\u0447\u0442\u0435."}}
+
+
+2020-09-12 09:45:13
+Content to send: {"method":"sendMessage","text":"Manager Sergey \u043f\u0440\u0438\u043d\u044f\u043b(\u0430) \u0437\u0430\u043a\u0430\u0437 \u2116174","chat_id":"302711179","disable_notification":"true"}
+
+
+2020-09-12 09:45:13
+Answer content: {"ok":true,"result":{"message_id":241,"from":{"id":799513981,"is_bot":true,"first_name":"imigetest","username":"imigetestbot"},"chat":{"id":302711179,"first_name":"Sergejs","last_name":"Germanovs","username":"germanovs","type":"private"},"date":1599893113,"text":"Manager Sergey \u043f\u0440\u0438\u043d\u044f\u043b(\u0430) \u0437\u0430\u043a\u0430\u0437 \u2116174"}}
+
+
+2020-09-12 10:52:55
+Content to send: {"method":"answerCallbackQuery","text":"\u0412\u044b \u043f\u0440\u0438\u043d\u044f\u043b\u0438 \u0437\u0430\u044f\u0432\u043a\u0443 \u043d\u0430 \u043e\u0431\u0440\u0430\u0442\u043d\u044b\u0439 \u0437\u0432\u043e\u043d\u043e\u043a \u211650","callback_query_id":"1300134616552940636","show_alert":"true"}
+
+
+2020-09-12 10:52:55
+Answer content: {"ok":true,"result":true}
+
+
+2020-09-12 10:52:55
+Content to send: {"method":"editMessageReplyMarkup","chat_id":302711179,"message_id":243,"reply_markup":{"inline_keyboard":[]}}
+
+
+2020-09-12 10:52:56
+Answer content: {"ok":true,"result":{"message_id":243,"from":{"id":799513981,"is_bot":true,"first_name":"imigetest","username":"imigetestbot"},"chat":{"id":302711179,"first_name":"Sergejs","last_name":"Germanovs","username":"germanovs","type":"private"},"date":1599896491,"edit_date":1599897175,"text":"\u041f\u0440\u043e\u0441\u0438\u0442 \u043f\u0435\u0440\u0435\u0437\u0432\u043e\u043d\u0438\u0442\u044c (imige.ru): test\n\u0422\u0435\u043b\u0435\u0444\u043e\u043d: 1","entities":[{"offset":20,"length":8,"type":"url"}]}}
+
+
+2020-09-12 10:52:56
+Content to send: {"method":"sendMessage","text":"Manager Sergey \u043f\u0440\u0438\u043d\u044f\u043b(\u0430) \u0437\u0430\u044f\u0432\u043a\u0443 \u043d\u0430 \u043e\u0431\u0440\u0430\u0442\u043d\u044b\u0439 \u0437\u0432\u043e\u043d\u043e\u043a \u211650","chat_id":"302711179","disable_notification":"true"}
+
+
+2020-09-12 10:52:56
+Answer content: {"ok":true,"result":{"message_id":245,"from":{"id":799513981,"is_bot":true,"first_name":"imigetest","username":"imigetestbot"},"chat":{"id":302711179,"first_name":"Sergejs","last_name":"Germanovs","username":"germanovs","type":"private"},"date":1599897176,"text":"Manager Sergey \u043f\u0440\u0438\u043d\u044f\u043b(\u0430) \u0437\u0430\u044f\u0432\u043a\u0443 \u043d\u0430 \u043e\u0431\u0440\u0430\u0442\u043d\u044b\u0439 \u0437\u0432\u043e\u043d\u043e\u043a \u211650"}}
+
+
+2020-09-12 10:52:56
+Content to send: {"method":"sendMessage","text":"Manager Sergey \u043f\u0440\u0438\u043d\u044f\u043b(\u0430) \u0437\u0430\u044f\u0432\u043a\u0443 \u043d\u0430 \u043e\u0431\u0440\u0430\u0442\u043d\u044b\u0439 \u0437\u0432\u043e\u043d\u043e\u043a \u211650","chat_id":"690248351","disable_notification":"true"}
+
+
+2020-09-12 10:52:56
+Answer content: {"ok":true,"result":{"message_id":246,"from":{"id":799513981,"is_bot":true,"first_name":"imigetest","username":"imigetestbot"},"chat":{"id":690248351,"first_name":"Alina","last_name":"Germanova","username":"Alina_doberman","type":"private"},"date":1599897176,"text":"Manager Sergey \u043f\u0440\u0438\u043d\u044f\u043b(\u0430) \u0437\u0430\u044f\u0432\u043a\u0443 \u043d\u0430 \u043e\u0431\u0440\u0430\u0442\u043d\u044b\u0439 \u0437\u0432\u043e\u043d\u043e\u043a \u211650"}}
+
+
+2020-09-12 10:52:56
+Content to send: {"method":"sendMessage","text":"Manager Sergey \u043f\u0440\u0438\u043d\u044f\u043b(\u0430) \u0437\u0430\u044f\u0432\u043a\u0443 \u043d\u0430 \u043e\u0431\u0440\u0430\u0442\u043d\u044b\u0439 \u0437\u0432\u043e\u043d\u043e\u043a \u211650","chat_id":"302711179","disable_notification":"true"}
+
+
+2020-09-12 10:52:56
+Answer content: {"ok":true,"result":{"message_id":247,"from":{"id":799513981,"is_bot":true,"first_name":"imigetest","username":"imigetestbot"},"chat":{"id":302711179,"first_name":"Sergejs","last_name":"Germanovs","username":"germanovs","type":"private"},"date":1599897176,"text":"Manager Sergey \u043f\u0440\u0438\u043d\u044f\u043b(\u0430) \u0437\u0430\u044f\u0432\u043a\u0443 \u043d\u0430 \u043e\u0431\u0440\u0430\u0442\u043d\u044b\u0439 \u0437\u0432\u043e\u043d\u043e\u043a \u211650"}}
+
+
+2020-09-12 10:55:54
+Content to send: {"method":"answerCallbackQuery","text":"\u0417\u0430\u044f\u0432\u043a\u0430 \u211650 \u0443\u0436\u0435 \u043f\u0440\u0438\u043d\u044f\u0442\u0430","callback_query_id":"2964594096618865567","show_alert":"true"}
+
+
+2020-09-12 10:55:54
+Answer content: {"ok":true,"result":true}
+
+
+2020-09-12 10:55:54
+Content to send: {"method":"editMessageReplyMarkup","chat_id":690248351,"message_id":244,"reply_markup":{"inline_keyboard":[]}}
+
+
+2020-09-12 10:55:54
+Answer content: {"ok":true,"result":{"message_id":244,"from":{"id":799513981,"is_bot":true,"first_name":"imigetest","username":"imigetestbot"},"chat":{"id":690248351,"first_name":"Alina","last_name":"Germanova","username":"Alina_doberman","type":"private"},"date":1599896492,"edit_date":1599897354,"text":"\u041f\u0440\u043e\u0441\u0438\u0442 \u043f\u0435\u0440\u0435\u0437\u0432\u043e\u043d\u0438\u0442\u044c (imige.ru): test\n\u0422\u0435\u043b\u0435\u0444\u043e\u043d: 1","entities":[{"offset":20,"length":8,"type":"url"}]}}
+
+
+2020-10-08 18:23:44
+Content to send: {"method":"answerCallbackQuery","text":"\u0412\u044b \u043f\u0440\u0438\u043d\u044f\u043b\u0438 \u0437\u0430\u043a\u0430\u0437 \u2116176","callback_query_id":"1300134614876162389","show_alert":"true"}
+
+
+2020-10-08 18:23:44
+Answer content: {"ok":true,"result":true}
+
+
+2020-10-08 18:23:44
+Content to send: {"method":"editMessageReplyMarkup","chat_id":302711179,"message_id":249,"reply_markup":{"inline_keyboard":[]}}
+
+
+2020-10-08 18:23:45
+Answer content: {"ok":true,"result":{"message_id":249,"from":{"id":799513981,"is_bot":true,"first_name":"imigetest","username":"imigetestbot"},"chat":{"id":302711179,"first_name":"Sergejs","last_name":"Germanovs","username":"germanovs","type":"private"},"date":1602170563,"edit_date":1602170624,"text":"\u041d\u043e\u0432\u044b\u0439 \u0437\u0430\u043a\u0430\u0437 \u2116176\n\u0417\u0430\u043a\u0430\u0437\u0447\u0438\u043a: Sergey\n\u0422\u0435\u043b\u0435\u0444\u043e\u043d: 123\n\u041f\u043e\u0447\u0442\u0430: tavar0n@mail.ru\n\u0412\u0441\u0435\u0433\u043e \u0442\u043e\u0432\u0430\u0440\u043e\u0432: 5\n\u0421\u0443\u043c\u043c\u0430: 379\n\u041c\u0435\u043d\u0435\u0434\u0436\u0435\u0440: Manager Sergey\n\u041f\u043e\u043b\u043d\u0430\u044f \u0438\u043d\u0444\u043e\u0440\u043c\u0430\u0446\u0438\u044f \u043e \u0437\u0430\u043a\u0430\u0437\u0435 \u0432\u044b\u0441\u043b\u0430\u043d\u0430 \u043f\u043e \u043f\u043e\u0447\u0442\u0435.","entities":[{"offset":54,"length":15,"type":"email"}]}}
+
+
+2020-10-08 18:23:45
+Content to send: {"method":"sendMessage","text":"Manager Sergey \u043f\u0440\u0438\u043d\u044f\u043b(\u0430) \u0437\u0430\u043a\u0430\u0437 \u2116176","chat_id":"302711179","disable_notification":"true"}
+
+
+2020-10-08 18:23:45
+Answer content: {"ok":true,"result":{"message_id":250,"from":{"id":799513981,"is_bot":true,"first_name":"imigetest","username":"imigetestbot"},"chat":{"id":302711179,"first_name":"Sergejs","last_name":"Germanovs","username":"germanovs","type":"private"},"date":1602170625,"text":"Manager Sergey \u043f\u0440\u0438\u043d\u044f\u043b(\u0430) \u0437\u0430\u043a\u0430\u0437 \u2116176"}}

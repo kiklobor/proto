@@ -1,0 +1,43 @@
+RewriteEngine On
+#<IfModule mod_rewrite.c>
+#RewriteBase /
+#RewriteRule ^index.php$ - [L]
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule . index.php [L]
+#</IfModule>
+
+#RewriteRule ^ index.php [L]
+#RewriteRule ^sitemap.xml$ /sitemap.php
+#RewriteCond  %{HTTP_HOST} tk-vtk.ru$
+#RewriteRule ^robots.txt$ robots.php
+RewriteRule ^sitemap.xml$ sitemap.php
+
+
+#перенаправление с index.php на /
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.php\ HTTP/
+RewriteRule ^index\.php$ http://proto.imige.ru/ [R=301,L]
+
+#перенаправление с www на без www
+#RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+#RewriteRule ^(.*)$ http://%1?$1 [R=301,L]
+
+#RewriteRule ^about/?$ /?page=about
+
+#RewriteCond %{HTTP_HOST} ^[^www\.].*$ [NC]
+#RewriteRule ^/?([a-z0-9\-/]+)/?$ / [L]
+
+
+
+
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /index.php??$1 [L,QSA]
+
+
+
+AuthType Basic
+AuthName "proto"
+AuthUserFile "/var/www/imigeru0/.htpasswds/public_html/proto/passwd"
+require valid-user

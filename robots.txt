@@ -1,0 +1,85 @@
+User-agent: Yandex
+Disallow: /?page=catalog&target*
+Disallow: /?&page=catalog&target*
+Disallow: /o_kompanii
+Disallow: /ajax
+Disallow: /js
+Disallow: /scripts
+Disallow: /?page=registration
+Disallow: /?page=basket
+Disallow: /home
+Disallow: /glavnaya
+Disallow: /index.php
+Disallow: /?page=404
+Disallow: /404
+Disallow: /cgi-sys/
+Disallow: /search?what
+Disallow: /orderComplete
+Disallow: /product/*?clid=
+Disallow: /customSuccess?id=*
+Disallow: /callbackSuccess?id=*
+Disallow: /catalog/?filters=*
+Disallow: /mcatalog
+Disallow:/*/*/?etext=
+Disallow: /catalog/aksessuary-dlya-monet-i-banknot/
+Disallow: /catalog/beydzhi/beydzhi/
+Disallow: /catalog/uglovye-nakopiteli/uglovye-nakopiteli/
+Disallow: /catalog/papki-planshety-s-metallicheskim-zazhimom/papki-planshety-s-metallicheskim-zazhimom/
+Disallow: /catalog/sistemy-arhivacii-dlya-dokumentov/arhivnye-koroba/
+Disallow: /catalog?target=
+Disallow:/services/upakovka-ruchnaya/upakovka-ruchnaya/
+Disallow:/services/kashirovanie/kashirovanie/
+Disallow:/services/vysechka/vysechka/
+Disallow:/services/skleivanie-razlichnymi-kleyami-i-sposobami/skleivanie-razlichnymi-kleyami-i-sposobami/
+Disallow:/services/izgotovlenie-na-tvch-izdeliy-iz-plenki-pvh/svarka-pvh/
+Disallow:/services/izgotovlenie-papok-na-zakaz/izgotovlenie-papok-na-zakaz/
+Disallow:/services/dizayn-i-razrabotka/dizayn-i-razrabotka/
+Disallow:/services/poshiv-iz-naturalnoy-kozhi/poshiv-iz-naturalnoy-kozhi/
+Disallow:/services/poshiv-iz-iskusstvennoy-kozhi/poshiv-iz-iskusstvennoy-kozhi/
+Disallow:/services/numeraciya/numeraciya/
+Disallow: /*yclid=*
+Clean-param: yadclid
+Clean-param: yadordid
+Clean-param: adv
+Clean-param: etext /*
+Clean-param: utm
+Clean-param: yclid
+
+User-agent: *
+Disallow: /?page=registration
+Disallow: /?page=cart
+Disallow: /?page=404
+Disallow: /404
+Disallow: /cgi-sys/
+Disallow: /search?what
+Disallow: /orderComplete
+Disallow: /cart
+Disallow: /?page=catalog&target=products*
+Disallow: /product/trudovaya-knizhka?clid=*
+Disallow: /customSuccess?id=*
+Disallow: /callbackSuccess?id=*
+Disallow: /catalog/?filters=*
+Disallow: /product/*?clid=
+Disallow: /mcatalog
+Disallow:/*/*/?etext=
+Disallow: /catalog?target=
+Disallow:/services/upakovka-ruchnaya/upakovka-ruchnaya/
+Disallow:/services/kashirovanie/kashirovanie/
+Disallow:/services/vysechka/vysechka/
+Disallow:/services/skleivanie-razlichnymi-kleyami-i-sposobami/skleivanie-razlichnymi-kleyami-i-sposobami/
+Disallow:/services/izgotovlenie-na-tvch-izdeliy-iz-plenki-pvh/svarka-pvh/
+Disallow:/services/izgotovlenie-papok-na-zakaz/izgotovlenie-papok-na-zakaz/
+Disallow:/services/dizayn-i-razrabotka/dizayn-i-razrabotka/
+Disallow:/services/poshiv-iz-naturalnoy-kozhi/poshiv-iz-naturalnoy-kozhi/
+Disallow:/services/poshiv-iz-iskusstvennoy-kozhi/poshiv-iz-iskusstvennoy-kozhi/
+Disallow:/services/numeraciya/numeraciya/
+Disallow: /*yclid=*
+Clean-param: yadclid
+Clean-param: yadordid
+Clean-param: adv
+Clean-param: etext /*
+Clean-param: utm
+Clean-param: yclid
+
+Sitemap: https://imige.ru/sitemap.xml
+Host: imige.ru
