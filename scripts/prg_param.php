@@ -16,7 +16,7 @@ if ($go->affectedRows()==1) {
     $images=array();
     $preimages=array();
     if($product['video']!='') array_push($images,'<a href="https://youtube.com/watch?v='.$product['video'].'&autoplay=1&version=3&loop=1&playlist='.$product['video'].'">ВИДЕО</a>');
-    foreach (glob(FPATHSERVICE.$product['uID'].'*') as $filename) array_push($preimages,'/'.$filename);
+    foreach (glob(FPATHPARAMS.$product['uID'].'*') as $filename) array_push($preimages,'/'.$filename);
     if (count($preimages)==0) array_push($images,'<img title="'.htmlspecialchars($product['name']).'" alt="Цена: '.$product['cost'].' руб. '.$productSafe.'" src="'.NOPH.'">');
     else {
         usort($preimages,'imgSort');
@@ -176,7 +176,7 @@ if ($go->affectedRows()==1) {
         $similar=$go->getAll('SELECT * FROM params WHERE active=1 AND ID IN (?a)',array_slice($similar,0,8));
         $simImg=array();
         foreach ($similar as $val) {
-            $simImg=glob(FPATHSERVICE.$val['uID'].'*');
+            $simImg=glob(FPATHPARAMS.$val['uID'].'*');
             if (count($simImg)!=0) {
                 usort($simImg,'imgSort');
                 $img='/'.$simImg[0];

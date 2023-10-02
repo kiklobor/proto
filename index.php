@@ -133,6 +133,7 @@ define('RESIZEPATH','files/resize');
 define('LROOT', $_SERVER['DOCUMENT_ROOT']);
 define('FPATH','files/');
 define('FPATHSERVICE', FPATH.'services/');
+define('FPATHPARAMS', FPATH.'params/');
 define('NOPH','/styles/images/noPhoto.png');
 define('MPICS','files/managers/');
 

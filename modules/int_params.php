@@ -201,7 +201,7 @@ if ($productsCountAll>0) {
 		echo '</pre>';
 		/**/
 
-		$images=glob(FPATHSERVICE.$row['uID'].'*');
+		$images=glob(FPATHPARAMS.$row['uID'].'*');
 	  if (count($images)!=0) {
 	      usort($images,'imgSort');
 	      $cellsPrepare['photo']=$images[0];
