@@ -30,18 +30,16 @@ echo '</pre>';
 // Set active tab styles based on the 'target' GET parameter
 $target = isset($_GET['target']) ? $_GET['target'] : '';
 
-if ($_GET['target']==='uses') {
-	$style1=' activeTab';
-	$style2='';
-	}
-elseif ($_GET['target']==='products') {
-	$style1='';
-	$style2=' activeTab';
-	}
-else {
-	$style1='';
-	$style2='';
-	}
+if ($target === 'uses') {
+    $style1 = ' activeTab';
+    $style2 = '';
+} elseif ($target === 'products') {
+    $style1 = '';
+    $style2 = ' activeTab';
+} else {
+    $style1 = '';
+    $style2 = '';
+}
 
 // новая работа со ссылкой
 parse_str(parse_url($_SERVER['REQUEST_URI'],PHP_URL_QUERY),$urlQuery);
