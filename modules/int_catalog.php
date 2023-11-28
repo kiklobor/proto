@@ -343,6 +343,16 @@ if (!isset($h1_group_name)) $h1_group_name = "";
 <a href="/">Главная</a> / <a href="/catalog/">Категории</a><!--mcatalog?target=products--> / <?=$link?>
 </div>
 
+<div id="optionsBlock" class="col-12 col-md-3 order-1 order-md-2 p-0">
+    <div class="optionsSticky position-sticky">
+	<div class="optionsText">ФИЛЬТРЫ</div>
+	<div class="optionsList">
+		<?include('int_options.php');?>
+	</div>
+	<a href="/callback" style="text-decoration:none;"><div class="makeCall">Заказать звонок</div></a>
+	</div>
+</div>
+
 <div class="contentContainer col-12 col-md-9 p-0">
 	<div class="catalog w-100">
 	    <h1 itemprop="name"><?=$h1_group_name?></h1>
@@ -428,15 +438,6 @@ if (!isset($h1_group_name)) $h1_group_name = "";
 <?=$seo_text_compiled?>
 </div>
 
-<div class="col-12 col-md-3 order-1 order-md-2 p-0">
-    <div class="optionsSticky position-sticky">
-	<div class="optionsText">ФИЛЬТРЫ</div>
-	<div class="optionsList">
-		<?include('int_options.php');?>
-	</div>
-	<a href="/callback" style="text-decoration:none;"><div class="makeCall">Заказать звонок</div></a>
-	</div>
-</div>
 <?php
 
 //var_dump(Timerw::finish());
@@ -448,3 +449,4 @@ function formatarticle($article) {
   }
   return $ahtml;
 }
+?>

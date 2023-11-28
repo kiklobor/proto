@@ -12,13 +12,9 @@ echo '<pre>';
 var_dump($urlArr);
 echo '</pre>';
 /**/
-
-
 global $urlArrf;
 global $categoryparams;
 global $isSemanticUrl;
-
-//var_dump($urlArrf);
 
 $paths = parse_url($_SERVER['REQUEST_URI']);
 $path = $paths['path'];
@@ -31,20 +27,18 @@ var_dump($_SERVER);
 echo '</pre>';
 /**/
 
-// Set active tab styles based on the 'target' GET parameter
-$target = isset($_GET['target']) ? $_GET['target'] : '';
-
-if ($target === 'uses') {
-    $style1 = ' activeTab';
-    $style2 = '';
-} elseif ($target === 'products') {
-    $style1 = '';
-    $style2 = ' activeTab';
-} else {
-    $style1 = '';
-    $style2 = '';
-}
-
+if ($_GET['target']==='uses') {
+	$style1=' activeTab';
+	$style2='';
+	}
+elseif ($_GET['target']==='products') {
+	$style1='';
+	$style2=' activeTab';
+	}
+else {
+	$style1='';
+	$style2='';
+	}
 
 // новая работа со ссылкой
 parse_str(parse_url($_SERVER['REQUEST_URI'],PHP_URL_QUERY),$urlQuery);
@@ -74,7 +68,7 @@ $catid = $categoryparams->getcatid($urlArrf);
 
 
 // echo '<pre>';
- //var_dump($catid);
+// var_dump($catid);
 // echo '</pre>';
 // 	echo '<pre>';
 // 	var_dump($categoryservices::$catarr);
@@ -83,18 +77,18 @@ $catid = $categoryparams->getcatid($urlArrf);
 	$urlArrfl = $urlArrf;
 	$cat = array_shift($urlArrfl);
   if ($cat != 'params') array_unshift($urlArrfl, $cat);
-	$query = 'SELECT c.* FROM category_params AS c WHERE c.ID='.$catid." AND c.type='service'";
+	$query = 'SELECT c.* FROM category_params AS c WHERE c.ID='.$catid." AND c.type='param'";
 	// var_dump($query);
 	$catrow = $go->getRow($query);
-	 //var_dump($catrow);
+	// var_dump($catrow);
 	$catss = '';
 	if (!is_null($catrow) AND $catrow!==FALSE) {
-		$cat = $categoryparams->getlastcat($urlArrfl);
+		$cat = $categoryservices->getlastcat($urlArrfl);
 		// var_dump($cat);
 
-		$catss = $categoryparams->getallhierarchycatuids($categoryparams::$catarr, $cat['uID']);
+		$catss = $categoryservices->getallhierarchycatuids($categoryservices::$catarr, $cat['uID']);
 		$catss = implode("','", $catss);
-		 //var_dump($catss);
+		// var_dump($catss);
 
 		array_pop($urlArrfl);
 		// var_dump($urlArrfl);
@@ -103,7 +97,7 @@ $catid = $categoryparams->getcatid($urlArrf);
 		while (count($urlArrfl)<>0) {
 			// $i++;
 			// var_dump($i);
-			$cat = $categoryparams->getlastcat($urlArrfl);
+			$cat = $categoryservices->getlastcat($urlArrfl);
 			// var_dump($cat);
 			$link='<a href="/params/'.implode('/', $cat['catpath']).'/">'.$cat['Name'].'</a> / '.$link;
 			$cat = array_pop($urlArrfl);
@@ -135,7 +129,7 @@ $productsCountAll = $go->affectedRows();
 
 $noFilter=true;
 
-//var_dump($productsCountAll);
+//var_dump($productsCount);
 
 //echo $pquery;
 
@@ -165,7 +159,7 @@ if ($productsCountAll>0) {
     //$startFrom=($pagenumber-1)*$productsOnPage+1;
     //КОНЕЦ РАБОТЫ СО СТРАНИЦАМИ
 
-    $ppgquery='SELECT p.* FROM '.$from.' WHERE '.$where.' GROUP BY '.$groupby.' ORDER BY p.name LIMIT ?i,?i'; //СОБИРАЕМ ЗАПРОС
+    $ppgquery='SELECT s.* FROM '.$from.' WHERE '.$where.' GROUP BY '.$groupby.' ORDER BY s.name LIMIT ?i,?i'; //СОБИРАЕМ ЗАПРОС
 
     //var_dump($ppgquery);
 
@@ -175,7 +169,7 @@ if ($productsCountAll>0) {
 
 
   //var_dump(Timerw::finish());
-  //var_dump($products);
+  //var_dump($productsCount);
 	/*
 	echo '<pre>';
   var_dump($products);
@@ -224,10 +218,10 @@ if ($pagenumber==1 && $noFilter) { //отображаем тесты тольк�
 
 $cellTemplateUnlogged='
     <div class="productCell col-6 col-md-4 col-lg-3">
-    <a href="/param/#url#">
+    <a href="/service/#url#">
     <div class="imgWrap"><img src="#photourl#" class="productCellImg"></div>
     </a>
-    <a class="d-block pt-md-2" href="/param/#url#">
+    <a class="d-block pt-md-2" href="/service/#url#">
     <div class="productNameWrap"><div class="productCellName">#name#</div></div>
     </a>
 
@@ -257,10 +251,10 @@ $cellTemplateUnlogged='
 
 $cellTemplateLogged='
     <div class="productCell col-6 col-md-4 col-lg-3">
-    <a href="/param/#url#">
+    <a href="/service/#url#">
     <div class="imgWrap"><img src="#photourl#" class="productCellImg"></div>
     </a>
-    <a class="d-block pt-md-2" href="/param/#url#">
+    <a class="d-block pt-md-2" href="/service/#url#">
     <div class="productNameWrap"><div class="productCellName">#name#</div></div>
     </a>
 
@@ -296,7 +290,7 @@ if (!isset($h1_group_name)) $h1_group_name = "";
 ?>
 
 <div class="bread">
-<a href="/">Главная</a> / <a href="/params/">Образцы</a><!--mcatalog?target=products--> / <?=$link?>
+<a href="/">Главная</a> / <a href="/params/">Каталог образцов</a><!--mcatalog?target=products--> / <?=$link?>
 </div>
 
 <div class="contentContainer col-12 col-md-9 p-0">

@@ -27,6 +27,7 @@ var_dump($paths);
 var_dump($_SERVER);
 echo '</pre>';
 /**/
+
 // Set active tab styles based on the 'target' GET parameter
 $target = isset($_GET['target']) ? $_GET['target'] : '';
 

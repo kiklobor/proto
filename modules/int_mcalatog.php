@@ -13,109 +13,6 @@ else {
 	$style1='';
 	$style2='';
 	}
- //die(11111111111111);
-/*
-//формируем запрос и выполняем
-if ($_GET['target']==='products') {
-	$query='SELECT * FROM groups WHERE active=1 ORDER BY name';
-	$query2='SELECT * FROM subgroups WHERE active=1 ORDER BY name';
-	$target='products';
-	}
-elseif ($_GET['target']==='uses') {
-	$query='SELECT * FROM usesGroups WHERE active=1 ORDER BY name';
-	$query2='SELECT * FROM uses WHERE active=1 ORDER BY name';
-	$target='uses';
-	}
-
-$items=$go->getAll($query);
-$itemsCount=$go->affectedRows();
-
-$subitems=$go->getAll($query2);
-$subitemsCount=$go->affectedRows();
-
-//парсим
-//сперва детей
-$z=array();
-if ($subitemsCount>0) {
-	$i=1;
-	foreach ($subitems as $row) {
-		$SIPrepare['name']=$row['name'];
-		$SIPrepare['id']=$row['ID'];
-		$SIPrepare['parent']=$row['parent'];
-		$SIPrepare['uid']=$row['uID'];
-
-		if(!array_key_exists($SIPrepare['parent'],$z)) $i=1;
-		$z[$SIPrepare['parent']][$i]=$SIPrepare;
-		$i++;
-		}
-	}
-else echo 'Нет дочернего содержимого.';
-
-//потом родителей и собираем массив
-
-$cells=array();
-if ($itemsCount>0) {
-	$i=1;
-	foreach ($items as $row) {
-		$cellsPrepare['name']='<a name="'.$row['ID'].'"><a href="/catalog?target='.$target.'&level=1&id='.$row['ID'].'"><div class="mcItem">'.$row['name'].'</div></a>';
-		//$cellsPrepare['photo']='files/product_'.$row['ID'].'.png';
-		$cellsPrepare['id']=$row['ID'];
-		array_push($cells,$cellsPrepare);
-		if(array_key_exists($row['uID'],$z)) foreach ($z[$row['uID']] as $row2) {
-			$cellsPrepare['name']='<a href="/catalog?target='.$target.'&level=2&id='.$row2['id'].'"><div class="mcSubitem">'.$row2['name'].'</div></a>';
-			$cellsPrepare['ID']=$row2['ID'];
-			array_push($cells,$cellsPrepare);
-			}
-		}
-	}
-else echo 'Нет содержимого.';
-*/
-
-/*
-if ($_GET['target']==='products' && !isset($_GET['id'])) {
-	$query='SELECT * FROM groups WHERE active=1 ORDER BY name';
-	$query2="SELECT g.*,sg.* FROM groups g,subgroups sg WHERE g.uID=sg.parent AND g.active=1 AND sg.active=1 AND g.ind=0 ORDER BY g.name, sg.name";
-	$target='products';
-	}
-elseif ($_GET['target']==='products' && isset($_GET['id'])) {
-    $query='SELECT * FROM groups WHERE active=1 AND ID='.$_GET['id'].' ORDER BY name';
-	$query2="SELECT g.*,sg.* FROM groups g,subgroups sg WHERE g.uID=sg.parent AND g.active=1 AND sg.active=1 AND g.ID=".$_GET['id']." ORDER BY g.name, sg.name";
-	$target='products';
-    }
-elseif ($_GET['target']==='uses') {
-	$query='SELECT * FROM usesGroups WHERE active=1 ORDER BY name';
-	$query2='SELECT * FROM uses WHERE active=1 ORDER BY name';
-	$target='uses';
-	}
-
-//создаем массив из групп а[uid]=название, по нему будем определять переход между подгруппами
-$items=$go->getAll($query);
-$itemsCount=$go->affectedRows();
-unset($groups);
-foreach($items as $row) {
-    $groups[$row['uID']]['name']=$row['name'];
-    $groups[$row['uID']]['ID']=$row['ID'];
-    $groups[$row['uID']]['url']=$row['url'];
-}
-
-$subitems=$go->getAll($query2);
-$subitemsCount=$go->affectedRows();
-unset($subgroups);
-$groupCheck='';
-$cells=array();
-$i=1;
-foreach($subitems as $row) {
-	if ($row['parent']!=$groupCheck) {
-	    $groupCheck=$row['parent'];
-	    //$toPush='<a href="/catalog?target='.$target.'&level=1&id='.$groups[$row['parent']]['ID'].'"><div class="mcItem">'.$groups[$row['parent']]['name'].'</div></a>';
-     $toPush='<a href="/catalog/'.$groups[$row['parent']]['url'].'/"><div class="mcItem">'.$groups[$row['parent']]['name'].'</div></a>';
-	    array_push($cells,$toPush);
-	}
- //$toPush='<a href="/catalog?target='.$target.'&level=2&id='.$row['ID'].'"><div class="mcSubitem">'.$row['name'].'</div></a>';
- $toPush='<a href="/catalog/'.$groups[$row['parent']]['url'].'/'.$row['url'].'/"><div class="mcSubitem">'.$row['name'].'</div></a>';
-	array_push($cells,$toPush);
-}
-*/
 
 global $category;
 $catarr = $category::$catarr;
@@ -162,6 +59,16 @@ $menu = build_tree($catarr,0);
 <a href="/">Главная</a> / Категории
 </div>
 
+<div id="optionsBlock" class="col-12 col-md-3 order-1 order-md-2 p-0">
+    <div class="optionsSticky position-sticky">
+	<div class="optionsText">ФИЛЬТРЫ</div>
+	<div class="optionsList">
+		<?include('int_options.php');?>
+	</div>
+	<a href="/callback" style="text-decoration:none;"><div class="makeCall">Заказать звонок</div></a>
+	</div>
+</div>
+
 <div class="contentContainer col-12 col-md-9 p-0">
 	<div class="catalog w-100">
 		<div class="tabContainer d-flex flex-row flex-nowrap">
@@ -188,14 +95,4 @@ $menu = build_tree($catarr,0);
 	<div class="textBlockInner">Текст</div>
 	</div>-->
 
-</div>
-
-<div class="col-12 col-md-3 order-1 order-md-2 p-0">
-    <div class="optionsSticky position-sticky">
-	<div class="optionsText">ФИЛЬТРЫ</div>
-	<div class="optionsList">
-		<?include('int_options.php');?>
-	</div>
-	<a href="/callback" style="text-decoration:none;"><div class="makeCall">Заказать звонок</div></a>
-	</div>
 </div>

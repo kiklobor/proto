@@ -12,6 +12,7 @@
 
     <div class="col-12 col-md-6 text-left text-md-left">
         <h1 itemprop="name"><?=$product['name']?></h1>
+        <h2 itemprop="name" style="display: none;"><?=$product['name']?></h2>
         <?=$description?><br>
         <?=$props?>
         Артикул: <b><?=$code?></b><br>

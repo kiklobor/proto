@@ -62,7 +62,7 @@ $menu = build_tree($catarr, 0);
 ?>
 
 <div class="bread">
-    <a href="/">Главная</a> / Параметры
+    <a href="/">Главная</a> / Образцы
 </div>
 
 <div class="contentContainer col-12 col-md-9 p-0">
