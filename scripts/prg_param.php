@@ -180,7 +180,7 @@ if ($go->affectedRows()==1) {
             if (count($simImg)!=0) {
                 usort($simImg,'imgSort');
                 $img='/'.$simImg[0];
-                $img = \Utilsw\Image\Image::getResizeImg($img, 'services');
+                $img = \Utilsw\Image\Image::getResizeImg($img, 'params');
                 }
             else $img=NOPH;
             unset($simImg);
@@ -194,7 +194,7 @@ if ($go->affectedRows()==1) {
             </a>';
             $similarSlider.=$block;
             }
-        $similarSlider='Похожие услуги: <div class="owl-carousel similar p-0 container-fluid">'.$similarSlider.'</div>';
+        $similarSlider='Похожие образцы: <div class="owl-carousel similar p-0 container-fluid">'.$similarSlider.'</div>';
     }
 
 

@@ -138,14 +138,14 @@ if ($go->affectedRows()==1) {
           $crumbs=$link;
           /**/
         } else {
-          $crumbs='Без категории / ';
+          $crumbs='Без категории';
         }
 
       } else {
-        $crumbs='Без категории / ';
+        $crumbs='Без категории';
       }
     }
-    $crumbs.=$product['name'];
+    //$crumbs.=$product['name'];
 
     // блок описания
     $description= ($product['description']!='') ? '<span itemprop="description">'.$product['description'].'</span>' : '<meta itemprop="description" content="нет описания">';
