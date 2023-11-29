@@ -328,14 +328,14 @@ if (!isset($h1_group_name)) $h1_group_name = "";
 	<div class="optionsList" id="optionsList">
 		<?include('int_options.php');?>
 	</div>
-	<div class="customBlock rightside col-12">
+<!--	<div class="customBlock rightside col-12">
 		<div class="customBlockText1">Продукция<br>по параметрам<br>заказчика</div>
 		<?if ($indsArr) foreach ($indsArr as $row) echo $row;?>
 		<a href="/customs"><div class="makeCall col-11 col-md-9 p-0 mb-2 mb-sm-3">Оставить заявку</div></a>
 		<!--<div class="customBlockText3">Составить описание</div>
 		<input class="customBlockInput" type="text">-->
-	</div>
-	<a href="/callback" style="text-decoration:none;"><div class="makeCall">Заказать звонок</div></a>
+<!--	</div>
+	<a href="/callback" style="text-decoration:none;"><div class="makeCall">Заказать звонок</div></a> -->
 	</div>
 </div>
 
