@@ -1,7 +1,17 @@
 <?php
-
+//Timerw::start();
 //точим стили
 
+/*
+// $paths $urlArr
+echo '<pre>';
+var_dump($paths);
+echo '</pre>';
+
+echo '<pre>';
+var_dump($urlArr);
+echo '</pre>';
+/**/
 global $urlArrf;
 global $category;
 global $isSemanticUrl;
@@ -10,6 +20,13 @@ $paths = parse_url($_SERVER['REQUEST_URI']);
 $path = $paths['path'];
 $path = \Utilsw\URL\URL::url($path);
 
+/*
+echo '<pre>';
+var_dump($path);
+var_dump($paths);
+var_dump($_SERVER);
+echo '</pre>';
+/**/
 
 if ($_GET['target']==='uses') {
 	$style1=' activeTab';
@@ -201,6 +218,15 @@ if ($productsCountAll>0) {
     $products=$go->getAll($ppgquery, $startnum, $productsOnPage);
     $productsCount=$go->affectedRows();
 
+
+  //var_dump(Timerw::finish());
+  //var_dump($productsCount);
+	/*
+	echo '<pre>';
+  var_dump($products);
+	echo '</pre>';
+	/**/
+
 	$i=1;
 	foreach ($products as $row) {
 		$cellsPrepare['name']=$row['name'];
@@ -213,6 +239,12 @@ if ($productsCountAll>0) {
 
 		if (isset($prices[$row['uID']]) && $prices[$row['uID']]!=0) $cellsPrepare['cost']=$prices[$row['uID']];
 		else $cellsPrepare['cost']='не установлена';
+
+		/*
+		echo '<pre>';
+		var_dump($cellsPrepare['cost']);
+		echo '</pre>';
+		/**/
 
 		$images=glob(FPATH.$row['uID'].'*');
 	  if (count($images)!=0) {
@@ -310,30 +342,12 @@ if (!isset($h1_group_name)) $h1_group_name = "";
 <div class="bread">
 <a href="/">Главная</a> / <a href="/catalog/">Категории</a><!--mcatalog?target=products--> / <?=$link?>
 </div>
-<!--
+
 <div id="optionsBlock" class="col-12 col-md-3 order-1 order-md-2 p-0">
     <div class="optionsSticky position-sticky">
 	<div class="optionsText">ФИЛЬТРЫ</div>
 	<div class="optionsList">
 		<?include('int_options.php');?>
-	</div>
-	<a href="/callback" style="text-decoration:none;"><div class="makeCall">Заказать звонок</div></a>
-	</div>
-</div>
--->
-
-  <div class="optionsSticky position-sticky">
-  <!--<a class="d-block d-sm-none" data-toggle="collapse" href="#optionsList" role="button" aria-expanded="true" aria-controls="optionsList"><div class="optionsText">ФИЛЬТРЫ</div></a>-->
-	<div class="optionsText d-block" data-target="#optionsList" data-toggle="collapse">ФИЛЬТРЫ</div>
-	<div class="optionsList" id="optionsList">
-		<?include('int_options.php');?>
-	</div>
-	<div class="customBlock rightside col-12">
-		<div class="customBlockText1">Продукция<br>по параметрам<br>заказчика</div>
-		<?if ($indsArr) foreach ($indsArr as $row) echo $row;?>
-		<a href="/customs"><div class="makeCall col-11 col-md-9 p-0 mb-2 mb-sm-3">Оставить заявку</div></a>
-		<!--<div class="customBlockText3">Составить описание</div>
-		<input class="customBlockInput" type="text">-->
 	</div>
 	<a href="/callback" style="text-decoration:none;"><div class="makeCall">Заказать звонок</div></a>
 	</div>
