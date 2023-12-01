@@ -443,6 +443,7 @@ if (isset($_POST) AND array_key_exists('action', $_POST) AND $_POST['action']===
 		$_SESSION['user_mail']=$user['mail'];
 		$_SESSION['user_name']=$user['name'];
 		$_SESSION['user_id']=$user['ID'];
+		$_SESSION['user_phone']=$user['phone'];
 		$_SESSION['user_in']=true;
 
 		//складываем корзины
@@ -506,6 +507,7 @@ if (isset($_POST) AND array_key_exists('action', $_POST) AND $_POST['action']===
 		unset($_SESSION['user_mail']);
 		unset($_SESSION['user_name']);
 		unset($_SESSION['user_id']);
+		unset($_SESSION['user_phone']);
 		$_SESSION['user_in']=false;
 		}
 }

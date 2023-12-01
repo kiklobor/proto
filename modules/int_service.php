@@ -1,11 +1,12 @@
 <?php
 if( $buttonText=="Заказать")$buttonText="Перейти к заказу";
-if (!isset($cbName)) $cbName = "";
-if (!isset($cbPhone)) $cbPhone = "";
-if (!isset($cbMail)) $cbMail = "";
+if (isset($_SESSION['user_name'])) {
+$cbName = $_SESSION['user_name'];
+if (isset($_SESSION['user_phone'])) $cbPhone = $_SESSION['user_phone'];
+if (isset($_SESSION['user_mail'])) $cbMail = $_SESSION['user_mail'];}
+else {$cbName = "";$cbPhone = "";$cbMail = "";}
 if (!isset($cbText)) $cbText = "";
 if (!isset($callbackResult)) $callbackResult = "";
-
 
 ?>
 
