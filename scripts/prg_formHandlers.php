@@ -188,6 +188,12 @@ if (array_key_exists('action', $_POST) AND $_POST['action']==='customorder') {
 	$cbMail=$_POST['mail'];
 	$cbText=$_POST['text'];
 	$captcha=$_POST['g-recaptcha-response'];
+	
+	$article=$_POST['article'];
+	$productname=$_POST['productname'];
+	if ($article!='') $article = 'Артикул: '.$article;
+	if ($productname!='') $productname = 'Название услуги: '.$productname;
+	
 	unset($_POST);
 	$counter=0;
 	$callbackResult='';
@@ -219,11 +225,11 @@ if (array_key_exists('action', $_POST) AND $_POST['action']==='customorder') {
 		Почта: '.$cbMail.'<br>
 		Дата и время: '.$date.'<br><br>
 
-		Текст: '.$cbText.'<br>';
+		Текст: '.$cbText.'<br>'.$article.'<br>'.$productname.'<br>';
 
 $telegramMessage=array(
     'method'=>'sendMessage',
-    'text'=>'Новый запрос на индивидуальный заказ.'.PHP_EOL.'Номер запроса: '.$callbackID.PHP_EOL.'Имя: '.$cbName.PHP_EOL.'Телефон: '.$cbPhone.PHP_EOL.'Почта: '.$cbMail.PHP_EOL.'Дата и время: '.$date.PHP_EOL.$cbText,
+    'text'=>'Новый запрос на индивидуальный заказ.'.PHP_EOL.'Номер запроса: '.$callbackID.PHP_EOL.'Имя: '.$cbName.PHP_EOL.'Телефон: '.$cbPhone.PHP_EOL.'Почта: '.$cbMail.PHP_EOL.$article.PHP_EOL.$productname.PHP_EOL.'Дата и время: '.$date.PHP_EOL.$cbText,
     'chat_id'=>'',
     'disable_notification'=>'true'
     );
