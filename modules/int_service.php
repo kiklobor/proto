@@ -7,7 +7,8 @@ if (isset($_SESSION['user_mail'])) $cbMail = $_SESSION['user_mail'];}
 else {$cbName = "";$cbPhone = "";$cbMail = "";}
 if (!isset($cbText)) $cbText = "";
 if (!isset($callbackResult)) $callbackResult = "";
-
+$code=$product['articleFull'];
+$supply=$product['availability'];
 ?>
 
 <div class="bread">
