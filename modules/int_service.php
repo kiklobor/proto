@@ -34,7 +34,7 @@ $supply=$product['availability'];
         </span>
         <meta itemprop="priceCurrency" content="RUB">
         </span>
-        <div><?=$supply?></div><br>
+ <!--       <div><?=$supply?></div><br> -->
 		
 		
 		<!--
