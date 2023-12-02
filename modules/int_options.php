@@ -172,7 +172,8 @@ $(document).ready(function (){
             $('.optionsListSubrow').removeClass('hide').attr('available','1');
             $('.optionsListRow[basicshow=0]').addClass('hide');
             $('.optionsListRow[basicshow=1]').removeClass('hide');
-            }
+            };
+            applyFilters.click();
         });
 
 	$('.optionsListRowText').click(function (){
