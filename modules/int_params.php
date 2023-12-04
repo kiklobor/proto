@@ -231,7 +231,7 @@ $cellTemplateUnlogged='
     <div class="productNameWrap"><div class="productCellName">#name#</div></div>
     </a>
 
-    <div class="w-50 p-2">
+    <div class="w-100 p-2">
     <div class="d-flex flex-row justify-content-between"><div><b>Цена:&nbsp;</b></div><div>Зависит от техзадания</div></div>
     <!-- <div class="d-flex flex-row justify-content-between"><div>Розничная:&nbsp;</div><div>#priceR1#</div></div>
     <div class="d-flex flex-row justify-content-between"><div>Co скидкой:&nbsp;</div><div><a class="blue" href="/login">войти</a></div></div>
@@ -264,7 +264,7 @@ $cellTemplateLogged='
     <div class="productNameWrap"><div class="productCellName">#name#</div></div>
     </a>
 
-    <div class="w-50 p-2">
+    <div class="w-100 p-2">
     <div class="d-flex flex-row justify-content-between"><div><b>Цена:&nbsp;</b></div><div><b>Зависит от техзадания</b></div></div>
     <!-- <div class="d-flex flex-row justify-content-between i-tooltip-parent"><div class="arrow-on-left">Розничная:&nbsp;</div><div>#priceR1#</div>
     	<div class="i-tooltip">Как только сумма ваших покупок достигнет '.$prc->l1.', начинает действовать цена со скидкой. При заказе от одной коробки.</div></div>
