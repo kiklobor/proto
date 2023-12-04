@@ -242,7 +242,7 @@ $cellTemplateUnlogged='
       <div class="articleWrap"><div class="inner-article-wrap">Арт.:<b>#code#</b></div></div>
 			<div class="d-flex flex-row flex-wrap w-100 no-gutters p-2">
 	<!--			<div class="col-12 col-md-6"><div class="pr-0 pr-md-1 pb-1 pb-md-0 d-flex align-items-center justify-content-center counter-wrp"><button class="ProductCount" action="0" product="#id#">-</button><input class="ProductCount" type="text" value="#ProductCountInCart#" autocomplete="off" product="#id#"><button class="ProductCount" action="1" product="#id#">+</button></div></div> -->
-      	<div class="col-12 col-md-6"><div class="buybtnWrap"><a href="/service/#url#"><button class="greenGradient" product="#id#" data-prdincart="#prdincart#" style="width: 130px;max-width: 130px;">#buttonText#</button></a></div></div>
+      	<div class="col-12 col-md-6"><div class="buybtnWrap"><a href="/param/#url#"><button class="greenGradient" product="#id#" data-prdincart="#prdincart#" style="width: 130px;max-width: 130px;">#buttonText#</button></a></div></div>
 			</div>
     </div>
 
@@ -277,7 +277,7 @@ $cellTemplateLogged='
       <div class="articleWrap"><div class="inner-article-wrap">Арт.:<b>#code#</b></div></div>
 			<div class="d-flex flex-row flex-wrap w-100 no-gutters p-2">
 	<!--<div class="col-12 col-md-6"><div class="pr-0 pr-md-1 pb-1 pb-md-0 d-flex align-items-center justify-content-center counter-wrp"><button class="ProductCount" action="0" product="#id#">-</button><input class="ProductCount" type="text" value="#ProductCountInCart#" autocomplete="off" product="#id#"><button class="ProductCount" action="1" product="#id#">+</button></div></div> -->
-      	<div class="col-12 col-md-6"><div class="buybtnWrap"><a href="/service/#url#"><button class="greenGradient" product="#id#" data-prdincart="#prdincart#" style="width: 130px;max-width: 130px;">#buttonText#</button></a></div></div>
+      	<div class="col-12 col-md-6"><div class="buybtnWrap"><a href="/param/#url#"><button class="greenGradient" product="#id#" data-prdincart="#prdincart#" style="width: 130px;max-width: 130px;">#buttonText#</button></a></div></div>
 			</div>
     </div>
 
@@ -314,7 +314,7 @@ if (!isset($h1_group_name)) $h1_group_name = "";
         foreach($cells as $cellval)
                 //if(isset($cells[$i])) {
                 if(TRUE) {
-                    $buttonText= isset($_SESSION['cart'][$cellval['id']]) ? 'Заказано!' : 'Заказать';
+                    $buttonText= isset($_SESSION['cart'][$cellval['id']]) ? 'Заказано!' : 'Взять за образец';
 										$prdincart = isset($_SESSION['cart'][$cellval['id']]) ? 1 : 0;
 
                     $cell= (array_key_exists('user_in', $_SESSION) AND $_SESSION['user_in']) ? $cellTemplateLogged : $cellTemplateUnlogged;

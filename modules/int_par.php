@@ -17,9 +17,9 @@ $supply=$product['availability'];
     <div class="col-12 col-md-6 text-center text-md-left">
         <div id="fotorama" class="fotorama" data-width="100%" data-ratio="4/3" data-nav="thumbs">
             <?=$gallery?>
+            <br>
         </div>
     </div>
-
 
     <div class="col-12 col-md-6 text-left text-md-left">
         <h1 itemprop="name"><?=$product['name']?></h1>
@@ -42,6 +42,7 @@ $supply=$product['availability'];
 
         <form id="pvn-switch" method="post"><input type="hidden" name="action" value="pvn-switch"></form>
     </div>
+    <br>
 <div class="catalog w-100">
         <div class="mcatalogBlock">
             <form id="custom" method="post">

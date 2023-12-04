@@ -19,7 +19,7 @@ $supply=$product['availability'];
             <?=$gallery?>
         </div>
     </div>
-
+<br>
 
     <div class="col-12 col-md-6 text-left text-md-left">
         <h1 itemprop="name"><?=$product['name']?></h1>
