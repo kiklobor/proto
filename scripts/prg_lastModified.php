@@ -9,7 +9,7 @@ else switch($page) {
 	case("main"):$lastModified=filemtime("modules/int_main.php");break;
 	case("news"):$lastModified=filemtime("modules/int_news.php");break;
 	case("about"):$lastModified=filemtime("modules/int_about.php");break;
-	case("delivery"):$lastModified=filemtime("modules/int_deliveryAndPayment.php");break;
+	case("delivery"):$lastModified=filemtime("modules/static/int_delivery.php");break;
 	case("products"):$lastModified=filemtime("modules/int_products.php");break;
 	case("uses"):$lastModified=filemtime("modules/int_uses.php");break;
 	case("customs"):$lastModified=filemtime("modules/int_customs.php");break;
