@@ -59,10 +59,10 @@ $menu = build_tree($catarr,0);
 <a href="/">Главная</a> / Категории
 </div>
 
-<div id="optionsBlock" class="col-12 col-md-3 order-1 order-md-2 p-0">
+<div id="optionsBlock" class="col-12 col-md-3 order-0 order-md-2 p-0">
     <div class="optionsSticky position-sticky">
-	<div class="optionsText">ФИЛЬТРЫ</div>
-	<div class="optionsList">
+	<div class="optionsText d-block" data-target="#optionsList" data-toggle="collapse">ФИЛЬТРЫ</div>
+	<div class="optionsList" id="optionsList">
 		<?include('int_options.php');?>
 	</div>
 	<a href="/callback" style="text-decoration:none;"><div class="makeCall">Заказать звонок</div></a>
@@ -96,3 +96,14 @@ $menu = build_tree($catarr,0);
 	</div>-->
 
 </div>
+
+<script>
+    jQuery(document).ready(function (){
+
+        if($('#optionsBlock').css('order')=='0') {
+            $('#optionsList').addClass('collapse'); //.addClass('hide');
+        }
+    });
+</script>
+
+
