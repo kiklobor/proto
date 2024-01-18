@@ -292,7 +292,7 @@ foreach($delivery as $key=>$value) {
 	    }
 	}
 		$url='/customSuccess?id='.$callbackID;
-		//header('Location: '.$url);
+		header('Location: '.$url);
 		}
 }
 
