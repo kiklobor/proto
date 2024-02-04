@@ -63,6 +63,8 @@ function startPayment(){
     elseif ($TA['amountInvoiced']==$TA['amountPaid']) $form='<br>Этот заказ уже оплачен.';
     elseif ($TA['amountPaid']>0 && $TA['amountPaid']<$TA['amountInvoiced']) $form='<br>Похоже, этот заказ оплачен только частично. Пожалуйста, свяжитесь с менеджером.';
     else {
+		
+		/*
         $form='
         <form method="post" action="https://paymaster.ru/payment/init">
         <input type="hidden" name="LMI_MERCHANT_ID" value="cee64c56-605a-4079-8807-f62c9603db64">
@@ -73,8 +75,36 @@ function startPayment(){
         <br><input type="submit" class="greyGradient" value="Оплатить">
         </form>
         ';
+		*/
+		
+		$form = '
+        <button onclick="pay()">Оплатить</button>
+        <script src="https://paymaster.ru/cpay/sdk/payment-widget.js"></script>
+        <script>
+            // Initialize PayMaster Payment Widget
+            function pay() {
+                var paymentWidget = new cpay.PaymentWidget();
+
+                paymentWidget.init({
+                    merchantId: "cee64c56-605a-4079-8807-f62c9603db64", // Replace with your actual merchantId
+                    invoice: {
+                        description: "'.$TA['paymentDesc'].'"
+                    },
+                    amount: {
+                        value: '.$TA['amountInvoiced'].',
+                        currency: "RUB"
+                    },
+                    container: "paymaster-widget-container"
+                });
+            }
+
+        </script>
+    ';
+		
+		
         }
     $content.=$form;
+	
     
     return $content;
     }

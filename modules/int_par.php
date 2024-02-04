@@ -10,14 +10,15 @@ $supply=$product['availability'];
 ?>
 
 <div class="bread">
-<a href="/">Главная</a> / <a href="/params/">Образцы</a> / <?=$crumbs?><!--mcatalog?target=products-->
+<a href="/">Главная</a> / <a href="/params/">Параметры</a> / <?=$crumbs?><!--mcatalog?target=products-->
 </div>
 
 <div class="d-flex flex-row flex-wrap w-100 single-product-wrp" itemscope itemtype="https://schema.org/Product">
     <div class="col-12 col-md-6 text-center text-md-left">
         <div id="fotorama" class="fotorama" data-width="100%" data-ratio="4/3" data-nav="thumbs">
             <?=$gallery?>
-         </div>
+            <br>
+        </div>
     </div>
 
     <div class="col-12 col-md-6 text-left text-md-left">
@@ -41,7 +42,7 @@ $supply=$product['availability'];
 
         <form id="pvn-switch" method="post"><input type="hidden" name="action" value="pvn-switch"></form>
     </div>
-
+    <br>
 <div class="catalog w-100">
         <div class="mcatalogBlock">
             <form id="custom" method="post">

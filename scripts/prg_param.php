@@ -43,7 +43,7 @@ if ($go->affectedRows()==1) {
     ';
 
     $cellTemplateLogged='
-    <div class="w-50 p-2">
+    <div class="w-500 p-2">
     <div class="d-flex flex-row justify-content-between"><div><b>Цена:&nbsp;</b></div><div><b>Зависит от техзадания</b></div></div>
     <!-- <div class="d-flex flex-row justify-content-between i-tooltip-parent"><div class="arrow-on-left">Розничная:&nbsp;</div><div>#priceR1#</div>
         <div class="i-tooltip">Как только сумма ваших покупок достигнет '.$prc->l1.', начинает действовать цена со скидкой. При заказе от одной коробки.</div></div>

@@ -161,6 +161,7 @@ if ($page==='exit') {
 	unset($_SESSION['user_mail']);
 	unset($_SESSION['user_name']);
 	unset($_SESSION['user_id']);
+	unset($_SESSION['user_phone']);
 	$_SESSION['user_in']=false;
 	$url='/';
 	header('Location: '.$url);
@@ -561,7 +562,7 @@ switch($page) {
 	case("news"):require("scripts/prg_news.php");break;
 	case("articles"):require("scripts/prg_articles.php");break;
   case("guide"):require("scripts/prg_guide.php");break;
-	//case("404"):header("HTTP/1.1 404 Not Found");break;
+	case("404"):header("HTTP/1.1 404 Not Found");break;
   case("catalog"):
   case("params"):
    include_once(LROOT.'/modules/utils/url.php');

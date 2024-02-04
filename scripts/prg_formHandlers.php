@@ -1,7 +1,8 @@
 <?
 //промежуточная страница для обработки заказа
 if ($page==='orderProcess') {
-	$url='/orderComplete?order='.$_GET['order'];
+	//$url='/orderComplete?order='.$_GET['order'];
+	$url='/payment?action=start&order='.$_GET['order'];
 	header('Location: '.$url);
 	}
 
