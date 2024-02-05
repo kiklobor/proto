@@ -78,7 +78,7 @@ function startPayment(){
 		*/
 		
 		$form = '
-        <button onclick="pay()">Оплатить</button>
+        <button class="greenGradient" onclick="pay()">Оплатить</button>
         <script src="https://paymaster.ru/cpay/sdk/payment-widget.js"></script>
         <script>
             // Initialize PayMaster Payment Widget
