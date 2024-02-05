@@ -4,7 +4,7 @@ global $cartCount;
 //достаем заказ
 $query='SELECT * FROM orders WHERE ID=?i LIMIT 1';
 $order=$go->getAll($query,$_GET['order']);
-$paymentsOn=false;
+$paymentsOn=true;
 
 if ($go->affectedRows()===1 && $order[0]['status']==0) {
     //достаем менеджеров
@@ -69,7 +69,7 @@ if ($go->affectedRows()===1 && $order[0]['status']==0) {
     if ($paymentsOn) echo '
     <div class="w-100">
     Вы можете оплатить свой заказ банковской картой.<br>
-    <a href="/payment?result=success&action=start&order='.$_GET['order'].'"><button class="greyGradient">Оплатить</button></a>
+    <a href="/payment?action=start&order='.$_GET['order'].'"><button class="greyGradient">Оплатить</button></a>
     </div>';
 
     //пилим текст письма для админов и менеджеров

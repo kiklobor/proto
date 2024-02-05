@@ -75,7 +75,7 @@ function startPayment(){
         <br><input type="submit" class="greyGradient" value="Оплатить">
         </form>
         ';
-		*/
+        */
 		
 		$form = '
         <button class="greenGradient" onclick="pay()">Оплатить</button>
