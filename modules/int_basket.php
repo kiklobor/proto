@@ -100,7 +100,7 @@ if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
   }
   echo 'Вы можете оплатить заказ онлайн на сайте.</br>';
   echo '<img src="../styles/images/payment_systems.png" alt="payment_system"></br>';
-  if ($alert) echo 'Оплатить онлайн <input type="checkbox" name="PaymentOnline" disabled/></br>';
+  if ($alert)	echo 'Оплатить онлайн <input type="checkbox" id= name="PaymentOnline" disabled/></br>';
   	else echo 'Оплатить онлайн <input type="checkbox" name="PaymentOnline"/></br>';
 	echo '<div class="cartFinal"><a class="textlink goback"> Назад </a>&nbsp;<a id="erase" class="textlink"> Очистить </a>'.$placeOrder.'</div></div>';
 	}
@@ -162,7 +162,6 @@ if (isset($orderData) AND is_array($orderData) AND count($orderData)>0) {
 /**/
 
 ?>
-
 
 <?php if (isset($sentResult) AND is_array($sentResult) AND count($sentResult)>0) {?><div class="form-result"><div class="error"><?php echo wrapErrorsText($sentResult);?></div></div><?php }?>
 <div class="cartFormWrapper p-3">
