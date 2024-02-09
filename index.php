@@ -57,6 +57,7 @@ else {
         case 'service':$page='service';break;
         case 'params':$page='params';break;
 		case 'param':$page='param';break;
+		case 'update_session':$page='update_session';break;
         default:$page='404';break;
     	/*
     	case("delivery"):require("modules/int_deliveryAndPayment.php");break;
@@ -148,7 +149,7 @@ else {
     //else $canonical='';
     }
 */
-
+//$GLOBALS['paymentsOn'];
 $GLOBALS['basiclink']=0;
 /*тут должна быть проверка, вызывающая окно логина, если незалогиненный пользователь пытается вызывать страницу для залогиненных*/
 
@@ -777,6 +778,7 @@ switch($page) {
     break;
   case("service"):require("modules/int_service.php"); break;
   case("param"):require("modules/int_par.php"); break;
+  case("update_session"):require("modules/update_session.php"); break;
 
 	default:require("modules/int_main.php");break;
 	}

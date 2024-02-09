@@ -4,7 +4,7 @@ global $cartCount;
 //достаем заказ
 $query='SELECT * FROM orders WHERE ID=?i LIMIT 1';
 $order=$go->getAll($query,$_GET['order']);
-$paymentsOn=true;
+$paymentsOn=false;
 
 if ($go->affectedRows()===1 && $order[0]['status']==0) {
     //достаем менеджеров

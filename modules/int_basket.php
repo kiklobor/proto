@@ -5,7 +5,8 @@
 <h1>Корзина</h1>
 <!-- <h3><strong><font color='red'>ВНИМАНИЕ!!! Цена со скидкой и оптовая цена действуют при заказе от одной коробки на каждый товар!</font></strong></h3> -->
 <?
-global $paymentsOn; //--- Переменная - будет ли оплата онлайн
+//global $paymentsOn; //--- Переменная - будет ли оплата онлайн
+
 $mngrs=array();
 array_push($mngrs,'
 <label class="btn col-4 col-md-3 col-lg-2 p-0 mngrMethod active">
@@ -91,22 +92,25 @@ if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
 		}
 	//echo '<div class="cartFinal">Наименований: <b id="cartcount2">'.$_SESSION['cart_count'].'</b><br>';
 	echo '<div class="cartFinal w-100">Всего товаров: <b id="carttotal">'.$_SESSION['cart_total'].'</b> шт.<br>';
-	echo 'Итого: <b id="cartcost">'.$_SESSION['cart_cost'].'</b> руб.</br>';
+	echo 'Итого: <b id="cartcost">'.$_SESSION['cart_cost'].'</b> руб.</br></br>';
 	if ($alert) echo '<div style="color:red;text-align:center;margin: 15px auto;">Обратите внимание: один или более товаров в вашей корзине имеют нулевую цену, однако они не распространяются бесплатно. После оформления заказа с вами свяжется менеджер, проинформирует об актуальной цене товара и сделает пересчет итоговой стоимости.
 			<br>Приносим извинения за неудобства.</div>';
   $placeOrder = '&nbsp;<button class="greenGradient cartButton1 cartButton2">Оформить</button>';
   if (isset($sentResult) AND is_array($sentResult) AND count($sentResult)>0) {
     $placeOrder = '';
   }
-  echo 'Вы можете оплатить заказ онлайн на сайте.</br>';
-  echo '<img src="../styles/images/payment_systems.png" alt="payment_system"></br>';
-  if ($alert)	echo 'Оплатить онлайн <input type="checkbox" id= name="PaymentOnline" disabled/></br>';
-  	else echo 'Оплатить онлайн <input type="checkbox" name="PaymentOnline"/></br>';
+  echo 'Вы можете оплатить заказ банковской картой на сайте.</br>';
+  echo '<img src="../styles/images/payment_systems.png" alt="payment_systems"></br></br>';
+  if ($alert)	echo 'Оплатить онлайн <input type="checkbox" name="PaymentOnline" disabled/></br>';
+  	else echo 'Оплатить онлайн <input type="checkbox" name="PaymentOnline" onClick="trackCheckboxClick()" /></br>';
 	echo '<div class="cartFinal"><a class="textlink goback"> Назад </a>&nbsp;<a id="erase" class="textlink"> Очистить </a>'.$placeOrder.'</div></div>';
 	}
 else echo 'Корзина пуста';
 //$go->free($product);
 
+//if (isset($_POST['PaymentOnline'])) $_SESSION['paymentsOn'] = true; else $_SESSION['paymentsOn'] = false;
+
+//echo 'paymentsOn: ';var_dump($_SESSION['paymentsOn']['paymentsOn']);
 /*
 echo '<pre>';
 var_dump($sentResult);
@@ -186,3 +190,27 @@ if (isset($orderData) AND is_array($orderData) AND count($orderData)>0) {
 </div>
 </form>
 </div>
+
+
+<script>
+function trackCheckboxClick() {
+    var checkbox = document.getElementsByName("PaymentOnline")[0];
+    var isChecked = checkbox.checked;
+
+    // Make an AJAX request to update the session variable
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", "update_session", true);
+    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState === XMLHttpRequest.DONE) {
+            // Handle response from the server if needed
+            if (xhr.status === 200) {
+                console.log("Session variable updated successfully.");
+            } else {
+                console.error("Error updating session variable.");
+            }
+        }
+    };
+    xhr.send("paymentOnline=" + isChecked);
+}
+</script>
