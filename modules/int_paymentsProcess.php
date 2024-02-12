@@ -4,9 +4,9 @@ $content='';
 
 switch($_GET['action']) {
     case 'success': $content=processSuccess();break;
-    case 'failure': $content='По каким-то причинам платеж не был произведен. Пожалуйста, свяжитесь с нами.<div class="loginWrapper"><a href= "http://proto.imige.ru/"><button class="greenGradient cartButton3">Вернуться на главную</button></a></div>';break;
+    case 'failure': $content='<div class="loginWrapper">По каким-то причинам платеж не был произведен. Пожалуйста, свяжитесь с нами.<br><a href= "http://proto.imige.ru/"><button class="greenGradient cartButton3">Вернуться на главную</button></a></div>';break;
     case 'start': $content=startPayment();break;
-    default: $content='Случилась ошибка. Возможно, ваш платеж был завершен, но что-то пошло не так. Пожалуйста, скопируйте URL из адресной строки браузера и свяжитесь с нами.<div class="loginWrapper"><a href= "http://proto.imige.ru/"><button class="greenGradient cartButton3">Вернуться на главную</button></a></div>';
+    default: $content='<div class="loginWrapper">Случилась ошибка. Возможно, ваш платеж был завершен, но что-то пошло не так. Пожалуйста, скопируйте URL из адресной строки браузера и свяжитесь с нами.<br><a href= "http://proto.imige.ru/"><button class="greenGradient cartButton3">Вернуться на главную</button></a></div>';
     }
     
 function processSuccess(){
