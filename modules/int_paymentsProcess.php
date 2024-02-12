@@ -1,17 +1,12 @@
 <?
 
-
-
-
-
-
 $content='';
 
 switch($_GET['action']) {
     case 'success': $content=processSuccess();break;
-    case 'failure': $content='По каким-то причинам платеж не был произведен. Пожалуйста, свяжитесь с нами.';break;
+    case 'failure': $content='По каким-то причинам платеж не был произведен. Пожалуйста, свяжитесь с нами.<div class="loginWrapper"><a href= "http://proto.imige.ru/"><button class="greenGradient cartButton3">Вернуться на главную</button></a></div>';break;
     case 'start': $content=startPayment();break;
-    default: $content='Случилась ошибка. Возможно, ваш платеж был завершен, но что-то пошло не так. Пожалуйста, скопируйте URL из адресной строки браузера и свяжитесь с нами.';
+    default: $content='Случилась ошибка. Возможно, ваш платеж был завершен, но что-то пошло не так. Пожалуйста, скопируйте URL из адресной строки браузера и свяжитесь с нами.<div class="loginWrapper"><a href= "http://proto.imige.ru/"><button class="greenGradient cartButton3">Вернуться на главную</button></a></div>';
     }
     
 function processSuccess(){
@@ -21,10 +16,11 @@ function processSuccess(){
 
 //достаем заказ
 $query='SELECT * FROM orders WHERE ID=?i LIMIT 1';
-$order=$go->getAll($query,$_GET['order']);
+$order=$go->getAll($query,$_POST['LMI_PAYMENT_NO']);
 $paymentsOn=false;
 
-if ($go->affectedRows()===1 && $order[0]['status']==0) {
+if ($go->affectedRows()===1) {
+
     //достаем менеджеров
     $query='SELECT * FROM managers';
     $content=$go->getAll($query);
@@ -40,7 +36,7 @@ if ($go->affectedRows()===1 && $order[0]['status']==0) {
 
     //достаем состав заказа
     $query='SELECT * FROM ordersContent WHERE orderID=?i';
-    $orderContent=$go->getAll($query,$_GET['order']);
+    $orderContent=$go->getAll($query,$_POST['LMI_PAYMENT_NO']);
 
     //обсчитываем и собираем текст
     $orderText='
@@ -60,7 +56,7 @@ if ($go->affectedRows()===1 && $order[0]['status']==0) {
     $orderText=$orderText.'<br>Общая стоимость: '.$total_cost.' руб.';
 
     //собираем письмо покупателю
-    $mailText='Здравствуйте, '.$customer[0]['name'].'<br><br>Номер вашего заказа: '.$_GET['order'].'<br>'.$orderText.'<br>В ближайшее время с вами свяжется менеджер.<br><br>Спасибо за ваш заказ!<br>С уважением, ООО "Имидж".';
+    $mailText='Здравствуйте, '.$customer[0]['name'].'<br><br>Номер вашего заказа: '.$_POST['LMI_PAYMENT_NO'].'<br>'.$orderText.'<br>Оплачен онлайн.<br><br>Спасибо за ваш заказ!<br>С уважением, ООО "Имидж".';
 
     //отправляем письмо покупателю
 
@@ -70,7 +66,7 @@ if ($go->affectedRows()===1 && $order[0]['status']==0) {
     try {
     	$mail->AddAddress($customer[0]['mail'], $customer[0]['name']);
     	$mail->SetFrom('no_reply@imige.ru', 'ООО "Имидж"');
-    	$mail->Subject = 'Заказ №'.$_GET['order'].' на сайте IMIGE.RU';
+    	$mail->Subject = 'Заказ №'.$_POST['LMI_PAYMENT_NO'].' на сайте IMIGE.RU';
     	$mail->AltBody = 'To view the message, please use an HTML compatible email viewer!'; // optional - MsgHTML will create an alternate automatically
     	$mail->MsgHTML($mailText);
     	$mail->Send();
@@ -84,20 +80,16 @@ if ($go->affectedRows()===1 && $order[0]['status']==0) {
     catch (Exception $e) {$e->getMessage();}
 
     //echo $orderText;
-    if ($paymentsOn) echo '
-    <div class="w-100">
-    Вы можете оплатить свой заказ банковской картой.<br>
-    <a href="/payment?action=start&order='.$_GET['order'].'"><button class="greyGradient">Оплатить</button></a>
-    </div>';
+    //if ($paymentsOn) echo '
+    //<div class="w-100">
+    //Вы можете оплатить свой заказ банковской картой.<br>
+    //<a href="/payment?action=start&order='.$_GET['order'].'"><button class="greenGradient cartButton3">Оплатить</button></a>
+    //</div>';
 
     //пилим текст письма для админов и менеджеров
-    $mailText='Заказчик: '.$customer[0]['name'].'<br><br>
-    Номер заказа: '.$_GET['order'].'<br>
-    Телефон: '.$customer[0]['phone'].'<br>
-    Почта: '.$customer[0]['mail'].'<br><br>
-    '.$orderText.'<br>';
+    $mailText='Заказ №' . $_POST['LMI_PAYMENT_NO'] . ', на сумму ' . $total_cost . ' оплачен онлайн.';
 
-    $botText='Новый заказ №'.$_GET['order'].'
+    $botText='Новый заказ №'.$_POST['LMI_PAYMENT_NO'].'
     Заказчик: '.$customer[0]['name'].'
     Телефон: '.$customer[0]['phone'].'
     Почта: '.$customer[0]['mail'].'
@@ -108,8 +100,8 @@ if ($go->affectedRows()===1 && $order[0]['status']==0) {
     // $go->sendMessageAdmin($botText); //отправляем в телеграм
 
     $telegramMessage = array(
-        'method' => 'sendMessage',
-       'text' => 'Заказ №' . $_GET['order'] . ', на сумму ' . $total_cost . ' оплачен онлайн.',
+       'method' => 'sendMessage',
+       'text' => 'Заказ №' . $_POST['LMI_PAYMENT_NO'] . ', на сумму ' . $total_cost . ' оплачен онлайн.',
        'chat_id' => '',
        'disable_notification' => 'true'
 );
@@ -126,7 +118,7 @@ if ($go->affectedRows()===1 && $order[0]['status']==0) {
         try {
     		$mail->AddAddress($value['mail'], $value['name']);
     		$mail->SetFrom('no_reply@imige.ru', 'ООО "Имидж"');
-    		$mail->Subject = 'Новый заказ №'.$_GET['order'];
+    		$mail->Subject = 'Новый заказ №'.$_POST['LMI_PAYMENT_NO'];
     		$mail->AltBody = 'To view the message, please use an HTML compatible email viewer!'; // optional - MsgHTML will create an alternate automatically
     		$mail->MsgHTML($mailText);
     		$mail->Send();
@@ -141,11 +133,11 @@ if ($go->affectedRows()===1 && $order[0]['status']==0) {
     	}
 
     //отправляем письмо менеджерам
-    $telegramMessage['reply_markup']=array(
-            "inline_keyboard" => array(
-                array(array('text' => 'Принять', 'callback_data' => 'action=accept&what=order&id='.$_GET['order']))
-                )
-            );
+    //$telegramMessage['reply_markup']=array(
+    //        "inline_keyboard" => array(
+     //           array(array('text' => 'Принять', 'callback_data' => 'action=accept&what=order&id='.$_POST['LMI_PAYMENT_NO']))
+     //           )
+    //        );
 
     if ($order[0]['manager']!=0) {
         $query='SELECT * FROM managers WHERE active=1 AND ID=?i';
@@ -167,7 +159,7 @@ if ($go->affectedRows()===1 && $order[0]['status']==0) {
     	try {
     		$mail->AddAddress($value['mail'], $value['name']);
     		$mail->SetFrom('no_reply@imige.ru', 'ООО "Имидж"');
-    		$mail->Subject = 'Новый заказ №'.$_GET['order'];
+    		$mail->Subject = 'Новый заказ №'.$_POST['LMI_PAYMENT_NO'];
     		$mail->AltBody = 'To view the message, please use an HTML compatible email viewer!'; // optional - MsgHTML will create an alternate automatically
     		$mail->MsgHTML($mailText);
     		$mail->Send();
@@ -229,10 +221,12 @@ $botText = 'Заказ №' . $_GET['order'] . ', на сумму ' . $total_cos
 	
     $text='<div class="loginWrapper"><h3>Платеж за заказ №'.$_POST['LMI_PAYMENT_NO'].' успешно совершен!</h3>
     <br>'.date('H:i:s d.m.Y',strtotime($_POST['LMI_SYS_PAYMENT_DATE'])).'
-    <br>Общая сумма: '.$_POST['LMI_PAYMENT_AMOUNT'].' руб.
+    <br>Общая сумма: '.$_POST['LMI_PAYMENT_AMOUNT'].' руб.</br></br></br>
+    <a href= "http://proto.imige.ru/"><button class="greenGradient cartButton3">Вернуться на главную</button></a>
     </div>
 	
-	<a href= "http://proto.imige.ru/"><button>Вернуться на главную</button></a>
+	
+	
 ';
 
     return $text;
@@ -308,11 +302,11 @@ if ($go->affectedRows()===1 && $order[0]['status']==0) {
     catch (Exception $e) {$e->getMessage();}
 
     //echo $orderText;
-    if ($paymentsOn) echo '
-    <div class="w-100">
-    Вы можете оплатить свой заказ банковской картой.<br>
-    <a href="/payment?action=start&order='.$_GET['order'].'"><button class="greyGradient">Оплатить</button></a>
-    </div>';
+    //if ($paymentsOn) echo '
+    //<div class="w-100">
+    //Вы можете оплатить свой заказ банковской картой.<br>
+    //<a href="/payment?action=start&order='.$_GET['order'].'"><button class="greyGradient">Оплатить</button></a>
+    //</div>';
 
     //пилим текст письма для админов и менеджеров
     $mailText='Заказчик: '.$customer[0]['name'].'<br><br>
@@ -426,13 +420,6 @@ if ($go->affectedRows()===1 && $order[0]['status']==0) {
 
 } //else echo 'Что-то пошло не так. Скорее всего, этот заказ уже обработан.';
 
-	
-	
-	
-	
-	
-
-    
     // достаем и обсчитываем заказ
     $query='SELECT * FROM orders WHERE ID=?i LIMIT 1';
     $order=$go->getRow($query,$_GET['order']);
@@ -480,7 +467,7 @@ if ($go->affectedRows()===1 && $order[0]['status']==0) {
 		
 		
         $form='
-        <form method="post" action="https://paymaster.ru/payment/init">
+        <form style="display:none" method="post" action="https://paymaster.ru/payment/init">
         <input type="hidden" name="LMI_MERCHANT_ID" value="cee64c56-605a-4079-8807-f62c9603db64">
         <input type="hidden" name="LMI_PAYMENT_AMOUNT" value="'.$TA['amountInvoiced'].'">
         <input type="hidden" name="LMI_CURRENCY" value="643">
@@ -526,7 +513,7 @@ document.querySelector(".greenGradient").click();
 		*/
 		
         }
-    $content.=$form;
+    $content=$form;
 	
     
 	
