@@ -7,6 +7,8 @@
 <?
 //global $paymentsOn; //--- Переменная - будет ли оплата онлайн
 
+
+
 $mngrs=array();
 array_push($mngrs,'
 <label class="btn col-4 col-md-3 col-lg-2 p-0 mngrMethod active">
@@ -193,6 +195,7 @@ if (isset($orderData) AND is_array($orderData) AND count($orderData)>0) {
 
 
 <script>
+trackCheckboxClick();
 function trackCheckboxClick() {
     var checkbox = document.getElementsByName("PaymentOnline")[0];
     var isChecked = checkbox.checked;
