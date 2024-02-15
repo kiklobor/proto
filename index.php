@@ -514,6 +514,36 @@ switch($urlArr[1]) {
       // var_dump($is404);
       // die($is404);
     break;
+
+    case 'params':
+      if (!($categoryparams->checkurlpath($urlArrf)) AND ($page == 'params')) {
+        $is404 = TRUE;
+      }
+      break;
+    case 'param':
+      if (count($urlArrf)>2) {
+      //if (count($urlArr)>4) {
+       $is404 = TRUE;
+       break;
+      }
+
+      $serviceUrl=$urlArr[2];
+      $query="SELECT s.* FROM params s WHERE s.url=?s AND s.active=1 LIMIT 1";
+      $service=$go->getRow($query,$serviceUrl);
+      if (is_null($service) OR $service===FALSE) {  //OR $group['url'] != '') {
+        $is404 = TRUE;
+        break;
+      }
+
+      //маразм, но на всякий случай
+      if (count($categoryparams->getcatbyuid($service['parent'])) == 0) {
+        $is404 = TRUE;
+        break;
+      }
+      //die('service');
+      // var_dump($is404);
+      // die($is404);
+    break;
 	
 	
     //case 'sample':break;
