@@ -1177,6 +1177,7 @@ $(document).ready(function (){
 
 });
 </script>
+<!-- Yandex.Metrika counter -->
 <script type="text/javascript" >
     (function (d, w, c) {
         (w[c] = w[c] || []).push(function() {
@@ -1206,6 +1207,7 @@ $(document).ready(function (){
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/48177671?ut=noindex" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- Yandex.Metrika counter -->
+<!-- Yandex.Metrika counter 
 <script type="text/javascript" >
    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
    m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
@@ -1218,7 +1220,7 @@ $(document).ready(function (){
         webvisor:true
    });
 </script>
-<noscript><div><img src="https://mc.yandex.ru/watch/67598599" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<noscript><div><img src="https://mc.yandex.ru/watch/67598599" style="position:absolute; left:-9999px;" alt="" /></div></noscript> --!>
 <!-- /Yandex.Metrika counter -->
 <?php //var_dump(Timerw::finish());?>
 </body>
