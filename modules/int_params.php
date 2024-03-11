@@ -296,7 +296,7 @@ if (!isset($h1_group_name)) $h1_group_name = "";
 ?>
 
 <div class="bread">
-<a href="/">Главная</a> / <a href="/params/">Образцы</a><!--mcatalog?target=products--> / <?=$link?>
+<a href="/">Главная</a><!-- / <a href="/params/">Образцы</a> mcatalog?target=products--> / <?=$link?>
 </div>
 
 <div class="contentContainer col-12 col-md-9 p-0">

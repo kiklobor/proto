@@ -56,7 +56,7 @@ $menu = build_tree($catarr,0);
 ?>
 
 <div class="bread">
-<a href="/">Главная</a> / Категории
+<a href="/">Главная</a> <!-- / Категории -->
 </div>
 
 <div id="optionsBlock" class="col-12 col-md-3 order-0 order-md-2 p-0">
