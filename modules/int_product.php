@@ -1,5 +1,5 @@
 <div class="bread">
-<a href="/">Главная</a><!-- / <a href="/catalog/">Категории</a> / <?=$crumbs?>--mcatalog?target=products-->
+<a href="/">Главная</a><!-- / <a href="/catalog/">Категории</a>--> / <?=$crumbs?><!--mcatalog?target=products-->
 </div>
 
 <div class="d-flex flex-row flex-wrap w-100 single-product-wrp" itemscope itemtype="https://schema.org/Product">
