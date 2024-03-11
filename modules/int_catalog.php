@@ -340,7 +340,7 @@ if (!isset($h1_group_name)) $h1_group_name = "";
 ?>
 
 <div class="bread">
-<a href="/">Главная</a> / <a href="/catalog/">Категории</a><!--mcatalog?target=products--> / <?=$link?>
+<a href="/">Главная</a><!--/ <a href="/catalog/">Категории</a> mcatalog?target=products--> / <?=$link?>
 </div>
 
 <div id="optionsBlock" class="col-12 col-md-3 order-0 order-md-2 p-0">
