@@ -340,7 +340,8 @@ if (count($productsArrFinal)>0) {
   	</div>-->
     <div class="contentBlock maincat-service d-flex flex-column flex-sm-row flex-wrap"><!-- style="display:none  !important;" -->
       <div class="productsBlock col-12 col-sm-12 pb-1 pb-sm-4">
-        <a href="/services/"><div class="blockText">КАТАЛОГ УСЛУГ</div></a>
+        <!-- <a href="/services/"><div class="blockText">КАТАЛОГ УСЛУГ</div></a> -->
+        <div class="blockText">КАТАЛОГ УСЛУГ</div>
         <div class="blockList maincatservicewrp">
           <?php
            //var_dump($categoryservices::$catarr);
@@ -360,7 +361,8 @@ if (count($productsArrFinal)>0) {
 	
 	    <div class="contentBlock maincat-service d-flex flex-column flex-sm-row flex-wrap"><!-- style="display:none  !important;" -->
       <div class="productsBlock col-12 col-sm-12 pb-1 pb-sm-4">
-        <a href="/params/"><div class="blockText">КАТАЛОГ ПРОДУКЦИИ ПО ПАРАМЕТРАМ ЗАКАЗЧИКА</div></a>
+       <!-- <a href="/params/"><div class="blockText">КАТАЛОГ ПРОДУКЦИИ ПО ПАРАМЕТРАМ ЗАКАЗЧИКА</div></a> -->
+        <div class="blockText">КАТАЛОГ ПРОДУКЦИИ ПО ПАРАМЕТРАМ ЗАКАЗЧИКА</div>
         <div class="blockList maincatservicewrp">
           <?php
 		      global $categoryparams;
