@@ -320,7 +320,8 @@ if (count($productsArrFinal)>0) {
   <div class="col-12 col-md-9 p-0 order-2 order-md-1">
   	<div class="contentBlock maincat d-flex flex-column flex-sm-row flex-wrap">
     	<div class="productsBlock col-12 col-sm-12 pb-1 pb-sm-4">
-    		<a href="/catalog/"><div class="blockText">КАТАЛОГ ПРОДУКЦИИ</div></a>
+    	<!--	<a href="/catalog/"><div class="blockText">КАТАЛОГ ПРОДУКЦИИ</div></a> -->
+      <div class="blockText">КАТАЛОГ ПРОДУКЦИИ</div>
     		<div class="blockList maincatwrp">
     		<?php
           //foreach ($groupsArr as $row) echo $row;
