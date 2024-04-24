@@ -4,9 +4,9 @@ $content='';
 
 switch($_GET['action']) {
     case 'success': $content=processSuccess();break;
-    case 'failure': $content='<div class="loginWrapper">По каким-то причинам платеж не был произведен. Пожалуйста, свяжитесь с нами.<br><br><a href= "https://imige.ru/"><button class="greenGradient cartButton3">Вернуться на главную</button></a></div>';break;
+    case 'failure': $content='<div class="loginWrapper">По каким-то причинам платеж не был произведен. Пожалуйста, свяжитесь с нами.<br><br><a href= "http://proto.imige.ru/"><button class="greenGradient cartButton3">Вернуться на главную</button></a></div>';break;
     case 'start': $content=startPayment();break;
-    default: $content='<div class="loginWrapper">Случилась ошибка. Возможно, ваш платеж был завершен, но что-то пошло не так. Пожалуйста, скопируйте URL из адресной строки браузера и свяжитесь с нами.<br><br><a href= "https://imige.ru/"><button class="greenGradient cartButton3">Вернуться на главную</button></a></div>';
+    default: $content='<div class="loginWrapper">Случилась ошибка. Возможно, ваш платеж был завершен, но что-то пошло не так. Пожалуйста, скопируйте URL из адресной строки браузера и свяжитесь с нами.<br><br><a href= "http://proto.imige.ru/"><button class="greenGradient cartButton3">Вернуться на главную</button></a></div>';
     }
     
 function processSuccess(){
@@ -222,7 +222,7 @@ $botText = 'Заказ №' . $_GET['order'] . ', на сумму ' . $total_cos
     $text='<div class="loginWrapper"><h3>Платеж за заказ №'.$_POST['LMI_PAYMENT_NO'].' успешно совершен!</h3>
     <br>'.date('H:i:s d.m.Y',strtotime($_POST['LMI_SYS_PAYMENT_DATE'])).'
     <br>Общая сумма: '.$_POST['LMI_PAYMENT_AMOUNT'].' руб.</br></br></br>
-    <a href= "https://imige.ru/"><button class="greenGradient cartButton3">Вернуться на главную</button></a>
+    <a href= "http://proto.imige.ru/"><button class="greenGradient cartButton3">Вернуться на главную</button></a>
     </div>
 	
 	

@@ -65,7 +65,7 @@ if ($go->affectedRows()===1 && $order[0]['status']==0) {
     catch (\PHPMailer\PHPMailer\Exception $e) {$e->errorMessage();}
     catch (Exception $e) {$e->getMessage();}
 
-    echo '<div class="loginWrapper"><br><a href= "https://imige.ru/"><button class="greenGradient cartButton3">Вернуться на главную</button></a><br>'.$orderText.'</div>';
+    echo '<div class="loginWrapper"><br><a href= "http://proto.imige.ru/"><button class="greenGradient cartButton3">Вернуться на главную</button></a><br>'.$orderText.'</div>';
     //if ($paymentsOn) echo '
     //<div class="w-100">
     //Вы можете оплатить свой заказ банковской картой.<br>
@@ -182,4 +182,4 @@ if ($go->affectedRows()===1 && $order[0]['status']==0) {
     setcookie('cartToken', '', time() - 3600, '/'); // empty value and old timestamp
     $cartCount = 0;
 
-} else echo 'Что-то пошло не так. Скорее всего, этот заказ уже обработан.<div class="loginWrapper"><a href= "https://imige.ru/"><button class="greenGradient cartButton3">Вернуться на главную</button></a></div>';
+} else echo 'Что-то пошло не так. Скорее всего, этот заказ уже обработан.<div class="loginWrapper"><a href= "http://proto.imige.ru/"><button class="greenGradient cartButton3">Вернуться на главную</button></a></div>';
