@@ -357,18 +357,17 @@ if (!isset($h1_group_name)) $h1_group_name = "";
 	<div class="catalog w-100">
 	    <h1 itemprop="name"><?=$h1_group_name?></h1>
 		<div class="tabContainer">
-			<div class="pagesBlock col-6 col-md-9 d-flex justify-content-center align-items-center<?=$style2?>">
-			Всего товаров: <b><?=$productsCountAll?></b>
-		<!--	<a href="/catalog/"><div class="tabText">Продукция</div></a> --><!--mcatalog?target=products-->
+			<div class="tabBlock col-6 col-md-9 d-flex justify-content-center align-items-center<?=$style2?>">
+			<a href="/catalog/"><div class="tabText">Продукция</div></a><!--mcatalog?target=products-->
 			</div>
 
 			<div class="tabBlock col-6 col-md-3 d-flex justify-content-center align-items-center">
 			<a href="/customs"><div class="tabText">Продукция<br>по параметрам<br>заказчика</div></a>
    </div>
 		</div>
-<!--		<div class="pagesBlock">
+		<div class="pagesBlock">
 			Всего товаров: <b><?=$productsCountAll?></b>
-		</div> -->
+		</div>
 
 		<div class="catalogBlock row no-gutters align-content-md-stretch">
 

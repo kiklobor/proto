@@ -56,7 +56,7 @@ else echo 'Нет содержимого.';
 ?>
 
 <div class="bread">
-<a href="/">Главная</a>/<!--<a href="/catalog?target=products">Продукция</a>/-->
+<a href="/">Главная</a>/<a href="/catalog?target=products">Продукция</a>/
 </div>
 
 <div class="contentContainer">
@@ -67,7 +67,7 @@ else echo 'Нет содержимого.';
 			</div>
 	
 			<div class="productsBlockTab tabBlock<?echo($style2);?>">
-			<!--<a href="/catalog?target=products"><div class="tabText">Продукция</div></a>-->
+			<a href="/catalog?target=products"><div class="tabText">Продукция</div></a>
 			</div>
 	
 			<div class="customBlockTab tabBlock">
