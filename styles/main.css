@@ -1549,6 +1549,11 @@ input.has-error {
 	display: none;
 }
 
+.a2 > .a1 > .a2 > .catalogCell .cSubitem {
+    font-size: 1rem;
+    line-height: 1.2rem;
+}
+
 /* mobile rules */
 @media screen and (max-width: 768px) {
 	.category-parent-wrp.wrpopened > .category-wrp {
