@@ -436,7 +436,7 @@ a.userMenuLink:hover {transform: translateX(-20px);}
 
 .blockText {
     width: 100%;
-    height: 50px;
+    height: auto;
     line-height: 50px;
     text-align: center;
     font-size: 1.4em;
