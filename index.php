@@ -650,7 +650,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- 20201202 4.3.1  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" --><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
 <script type="text/javascript" src="https://yastatic.net/jquery/2.2.3/jquery.min.js"></script>
-<script src='https://www.google.com/recaptcha/api.js'></script>
+<script async src='https://www.google.com/recaptcha/api.js'></script>
 
 <link  href="/styles/fotorama.css" rel="stylesheet">
 <script src="/scripts/fotorama.js"></script>
@@ -658,10 +658,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <link rel="stylesheet" href="/styles/owl.theme.default.min.css">
 <script src="/scripts/owl.carousel.min.js"></script>
 
-<!-- integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous" --><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-<!-- 20201202 4.3.1  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous" --><script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous" --><script async src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<!-- 20201202 4.3.1  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous" --><script async src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127638054-1"></script>
+<!-- <script src="https://www.googletagmanager.com/gtag/js?id=UA-127638054-1"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
@@ -684,7 +684,7 @@ gtag('config', 'UA-127638054-1');
 <meta name="yandex-verification" content="cd557ceb705f6c82" />
 
 <link href="/styles/main.css" rel="stylesheet" type="text/css">
-<script src="//code.jivosite.com/widget.js" jv-id="7por5QPLLn" async></script>
+<script async src="//code.jivosite.com/widget.js" jv-id="7por5QPLLn"></script>
 
 </head>
 
@@ -1222,7 +1222,7 @@ $(document).ready(function (){
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/67598599" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
-<?php //var_dump(Timerw::finish());?>
+<!-- <?php //var_dump(Timerw::finish());?> -->
 </body>
 </html>
 <?php

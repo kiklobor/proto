@@ -412,7 +412,7 @@ if (count($productsArrFinal)>0) {
 	</div>
 </div>
 
-<script>
+<script async>
     jQuery(document).ready(function (){
 
         if($('#optionsBlock').css('order')=='1') {
