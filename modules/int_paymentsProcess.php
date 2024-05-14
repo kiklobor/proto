@@ -56,7 +56,7 @@ if ($go->affectedRows()===1) {
     $orderText=$orderText.'<br>Общая стоимость: '.$total_cost.' руб.';
 
     //собираем письмо покупателю
-    $mailText='Здравствуйте, '.$customer[0]['name'].'<br><br>Номер вашего заказа: '.$_POST['LMI_PAYMENT_NO'].'<br>'.$orderText.'<br>Оплачен онлайн.<br><br>Спасибо за ваш заказ!<br>С уважением, ООО "Имидж".';
+ /*   $mailText='Здравствуйте, '.$customer[0]['name'].'<br><br>Номер вашего заказа: '.$_POST['LMI_PAYMENT_NO'].'<br>'.$orderText.'<br>Оплачен онлайн.<br><br>Спасибо за ваш заказ!<br>С уважением, ООО "Имидж".';
 
     //отправляем письмо покупателю
 
@@ -70,24 +70,12 @@ if ($go->affectedRows()===1) {
     	$mail->AltBody = 'To view the message, please use an HTML compatible email viewer!'; // optional - MsgHTML will create an alternate automatically
     	$mail->MsgHTML($mailText);
     	$mail->Send();
-    	//echo '<div class="orderWrapper w-100">
-    //Готово!<br>
-    //Заказ №'.$_GET['order'].' зарегистрирован.<br>
-    //Проверьте вашу почту.<br><br>
-    //</div>';
     	}
     catch (\PHPMailer\PHPMailer\Exception $e) {$e->errorMessage();}
     catch (Exception $e) {$e->getMessage();}
-
-    //echo $orderText;
-    //if ($paymentsOn) echo '
-    //<div class="w-100">
-    //Вы можете оплатить свой заказ банковской картой.<br>
-    //<a href="/payment?action=start&order='.$_GET['order'].'"><button class="greenGradient cartButton3">Оплатить</button></a>
-    //</div>';
-
+*/
     //пилим текст письма для админов и менеджеров
-    $mailText='Заказ №' . $_POST['LMI_PAYMENT_NO'] . ', на сумму ' . $total_cost . ' руб. оплачен онлайн.';
+ /*   $mailText='Заказ №' . $_POST['LMI_PAYMENT_NO'] . ', на сумму ' . $total_cost . ' руб. оплачен онлайн.';
 
     $botText='Новый заказ №'.$_POST['LMI_PAYMENT_NO'].'
     Заказчик: '.$customer[0]['name'].'
@@ -106,9 +94,9 @@ if ($go->affectedRows()===1) {
        'disable_notification' => 'true'
 );
     $telegramMessage['disable_notification']= (isWorkingHours()) ? 'false' : 'true';
-
+*/
     //отправляем копии письма админам
-    $query='SELECT * FROM adminDelivery WHERE active=1';
+/*    $query='SELECT * FROM adminDelivery WHERE active=1';
     $delivery=$go->getAll($query);
 
     foreach($delivery as $key=>$value) {
@@ -131,15 +119,8 @@ if ($go->affectedRows()===1) {
     	    $tg->sendj($telegramMessage);
     	    }
     	}
-
-    //отправляем письмо менеджерам
-    //$telegramMessage['reply_markup']=array(
-    //        "inline_keyboard" => array(
-     //           array(array('text' => 'Принять', 'callback_data' => 'action=accept&what=order&id='.$_POST['LMI_PAYMENT_NO']))
-     //           )
-    //        );
-
-    if ($order[0]['manager']!=0) {
+*/
+ /*   if ($order[0]['manager']!=0) {
         $query='SELECT * FROM managers WHERE active=1 AND ID=?i';
         $delivery=$go->getAll($query,$order[0]['manager']);
         if ($go->affectedRows()!=1) {
@@ -172,51 +153,8 @@ if ($go->affectedRows()===1) {
     	    $tg->sendj($telegramMessage);
     	    }
     	}
-		
+*/		
 }
-    /*
-    // достаем и обсчитываем заказ
-    $query='SELECT * FROM orders WHERE ID=?i LIMIT 1';
-    $order=$go->getRow($query,$_GET['order']);
-    $orderDate=date('d.m.Y',strtotime($order['date']));
-    $content='<h3>Платеж за заказ №'.$_GET['order'].' от '.$orderDate. ' оплачен онлайн"!</h3>';
-    //достаем покупателя
-    $query='SELECT * FROM customers WHERE ID=?i LIMIT 1';
-    $customer=$go->getRow($query,$order['customer']);
-    //достаем состав заказа
-    $query='SELECT * FROM ordersContent WHERE orderID=?i';
-    $orderContent=$go->getAll($query,$_GET['order']);
-    
-    //обсчитываем и собираем текст
-    $orderText='
-    <br>Состав заказа:';
-    $total_count=0;
-    $total_cost=0;
-    $includesZeroCostItems=false;
-    foreach ($orderContent as $key=>$value) {
-    	$total_count+=$value['count'];
-    	$query='SELECT * FROM products WHERE ID=?i LIMIT 1';
-    	$product=$go->getRow($query,$value['productID']);
-    	$cost=$value['cost'];
-    	if ($cost==0) $includesZeroCostItems=true;
-    	$total_cost+=$value['count']*$cost;
-    	$orderText.='<br>- '.$product['name'].', '.$product['articleFull'].' ('.$cost.' руб.): '.$value['count'];
-    	}
-    $orderText.='<br><br>Всего товаров: '.$total_count;
-    $orderText.='<br>Общая стоимость: '.$total_cost.' руб.';
-
-    $content.='<div class="w-100">'.$orderText.'</div>';
-	
-	    // Send Telegram message
-    //$telegramMessage = array(
-    //    'method' => 'sendMessage',
-    //    'text' => 'Заказ №' . $_GET['order'] . ', на сумму ' . $total_cost . ' оплачен онлайн.',
-     //   'chat_id' => '',
-    //    'disable_notification' => 'true'
-    //);
-$botText = 'Заказ №' . $_GET['order'] . ', на сумму ' . $total_cost . ' оплачен онлайн.';
- $go->sendMessageAdmin($botText);
-*/
 	
 	
     $text='<div class="loginWrapper"><h3>Платеж за заказ №'.$_POST['LMI_PAYMENT_NO'].' успешно совершен!</h3>
@@ -233,7 +171,7 @@ $botText = 'Заказ №' . $_GET['order'] . ', на сумму ' . $total_cos
     }
     
 function startPayment(){
-	    global $go;
+	global $go;
 	global $tg;
 	global $cartCount;
 
