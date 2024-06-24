@@ -87,7 +87,7 @@ if ($go->affectedRows()==1) {
         $supply=($product['availability'].'.</br>
             Доставка по г. Москва:</br>
          Срок доставки 1-3 дня</br>
-         Стоимость доставки 750 рублей.');
+         Стоимость доставки 850 рублей.');
     }
     else {
         $supply=($product['availability']==='') ? 'Срок поставки не указан' : $product['availability'];
